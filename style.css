@@ -81,6 +81,7 @@ a {
   border-radius: 10px;
 }
 
+
 /* hamburger menu  */
 .hamburger-menu {
   display: none;
@@ -104,6 +105,7 @@ li {
   margin-bottom: 8px;
 }
 
+
 /* --------------------------------------------------------- */
 .sub-menu {
   background-color: rgba(255, 255, 255, 1);
@@ -120,7 +122,7 @@ li {
 .nav .about-nav:hover .sub-menu {
   top: 2.5rem;
   pointer-events: auto;
-  z-index: 1;
+  z-index: 100;
 }
 
 /* --------------------------------------------------------- */
@@ -138,14 +140,16 @@ li {
   top: -999px;
   z-index: 999;
 }
+
 .sub-menu-s {
   list-style-type: none;
 }
 .nav .services-nav:hover .horizontal {
   top: 2.5rem;
   pointer-events: auto;
-  z-index: 1;
+  z-index: 100;
 }
+
 /* ------------------------------------------------------------ */
 
 /* ----hero ---- */
@@ -444,7 +448,7 @@ iframe {
 .line {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .head-1 {
   color: rgba(255, 95, 0, 1);
@@ -474,10 +478,10 @@ iframe {
   display: flex;
   justify-content: space-between;
 }
-.active,
+/* .active,
 .question:hover {
   background-color: rgba(255, 205, 176, 1);
-}
+} */
 .answer {
   line-height: 1.5rem;
   padding: 1.5rem 2rem;
@@ -650,7 +654,7 @@ img {
   .cta {
     display: none;
   }
-
+  
   /* hamburger-menu section  */
   .hamburger-menu {
     display: flex;
@@ -682,6 +686,15 @@ img {
 
   .hamburger::after {
     bottom: -8px;
+  }
+
+  .sub-menu{
+    margin-top: 48px;
+    margin-left: -8px;
+  }
+  .horizontal{
+    margin-top: 96px;
+    margin-left: -8px;
   }
   /* hero section  */
   .hero {
@@ -751,6 +764,7 @@ img {
   }
   .advert {
     margin: 40px 0;
+    margin-top: -60px;
   }
   .advert p {
     font-size: 14px;
@@ -759,7 +773,13 @@ img {
   .hr {
     display: none;
   }
-
+  .ad img {
+    width: 110%;
+    height: 110%;
+  }
+  .scroll {
+    width: 100%;
+  }
   .feature {
     width: 100%;
     margin: 40px 24px 40px 0;
@@ -892,9 +912,13 @@ img {
     margin: 40px 0;
     overflow: hidden;
   }
+  
   .testimonial h3 {
     margin-top: 8px;
     margin-bottom: 1rem;
+  }
+  .testimonial h4{
+    padding: 0 24px;
   }
   .card .slick-slide{
     padding: 10px;
@@ -982,10 +1006,10 @@ img {
     text-align: left;
   }
 
-  .active,
+  /* .active,
   .question:hover {
     background-color: rgba(255, 205, 176, 1);
-  }
+  } */
   .answer {
     font-size: 14px;
     font-weight: 400;
@@ -1006,8 +1030,8 @@ img {
     margin-top: 40px;
   }
 
-  .contact span {
-    font-size: 2rem;
+  .contact span, h3 {
+    font-size: 24px;
   }
 
   .contact .button {
@@ -1024,6 +1048,9 @@ img {
     padding: 1rem 4.5rem;
     background-color: rgba(255, 95, 0, 1);
     border-radius: 10px;
+  }
+  .cta-s{
+    background-color: rgba(255, 250, 236, 1);
   }
 
   /* footer section  */

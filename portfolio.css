@@ -136,10 +136,6 @@ li {
   top: -999px;
   z-index: 999;
 }
-.horizontal{
-  display: none;
-}
-s
 .sub-menu-s {
   list-style-type: none;
 }
@@ -373,8 +369,13 @@ span {
     display: none;
   }
 
+  .sub-menu{
+    margin-top: 48px;
+    margin-left: -8px;
+  }
   .horizontal{
-    display: none;
+    margin-top: 96px;
+    margin-left: -8px;
   }
 
   /* hamburger-menu section  */
@@ -557,8 +558,9 @@ span {
   }
   .contact h3,
   .contact span {
-    font-size: 2rem;
+    font-size: 24px;
   }
+  
   .footer {
     display: flex;
     background-color: rgba(255, 205, 176, 1);
@@ -577,9 +579,9 @@ span {
   .footer h4 {
     font-weight: 700;
   }
-  .brand {
-    /* margin-left: -88px; */
-  }
+  /* .brand {
+    margin-left: -88px;
+  } */
 
   .brand .logo {
     margin-bottom: 1rem;
@@ -618,6 +620,17 @@ span {
   }
   .portfolio{
     padding: 20px 24px;
+  }
+  .click {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .click div {
+    width: auto;
+    border: 1px solid rgba(255, 95, 0, 1);
+    border-radius: 8px;
+    padding: 8px 16px;
   }
   .p-images{
     display: flex;
