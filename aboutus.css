@@ -537,8 +537,7 @@ img {
     bottom: -8px;
   }
   .about {
-    margin: 0 24px;
-    margin-top: 16px;
+    margin: 16px 24px;
     flex-direction: column;
     text-align: center;
   }
@@ -546,11 +545,11 @@ img {
     display: none;
   }
   .about h1 {
-    font-size: 2rem;
+    font-size: 24px;
     text-align: center;
   }
   .about span {
-    font-size: 2rem;
+    font-size: 24px;
   }
   .about hr {
     display: none;
@@ -564,22 +563,30 @@ img {
     font-size: 1.3rem;
   }
   .about h5 {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 17px;
   }
   .big-img {
     margin: 24px;
+    margin-bottom: 52px;
   }
   .story {
     margin: 0 24px;
   }
-  .story h3 {
-    font-size: 2rem;
+  .story h3{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .story span{
+    font-size: 24px;
   }
   .story .container {
     flex-direction: column;
   }
   .story h5 {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
   }
   .story .container img {
     margin-top: 0;
@@ -590,9 +597,13 @@ img {
   }
   .stat {
     margin: 0 24px;
+    margin-top: 40px;
     gap: 20px;
     padding: 40px 0;
     flex-direction: column;
+  }
+  .stat h3, span{
+    font-size: 24px;
   }
   .stat .left {
     height: auto;
@@ -601,14 +612,18 @@ img {
   }
   .stat .left h3 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 24px;
   }
   .stat .left span {
-    font-size: 2rem;
+    font-size: 24px;
     text-align: center;
   }
-  .stat div h5 {
-    font-size: 15px;
+  .stat div h5, p {
+    font-size: 14px;
+  }
+  .stat div p {
+    font-weight: 400;
+    color: rgba(107, 107, 107, 1);
   }
   .block h1 {
     font-size: 45px;
@@ -619,7 +634,8 @@ img {
     line-height: 1.5;
   }
   .block {
-    gap: 20px !important;
+    margin-top: 16px;
+    gap: 24px !important;
   }
   .num {
     width: 35%;
@@ -628,14 +644,16 @@ img {
     width: 60%;
   }
   .dark {
+    margin: 104px 0 40px 0;
     padding: 40px 24px;
   }
 
   .dark h3 {
-    font-size: 2rem;
+    font-size: 24px;
   }
   .dark > h5 {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 17px;
     margin: 0;
   }
   .value {
@@ -651,7 +669,11 @@ img {
   }
   .value h3,
   .value span {
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .apart h5{
+    font-size: 16px;
+    margin-bottom: 16px;
   }
   .orange-1 {
     font-size: 1.6rem !important;
@@ -692,7 +714,10 @@ img {
   }
   .contact h3,
   .contact span {
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .contact .button{
+    margin-top: 24px;
   }
   .footer {
     display: flex;
