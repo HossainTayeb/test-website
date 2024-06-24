@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="icon" type="image/x-icon" href="/images/Favicon - Nusanse.svg">
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,6 +37,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- stylesheet  -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -63,25 +67,21 @@
           >Home
         </a>
         <div class="about-nav">
-          <a href="#">About us &nbsp;<i class="fa-solid fa-chevron-down"></i></a>
+          <a href="#"
+            >About us &nbsp;<i class="fa-solid fa-chevron-down"></i
+          ></a>
           <ul class="sub-menu">
             <li>
               <a href="portfolio.html"
                 ><p>Portfolio</p></a>
-                <br />
-                <p class="small-p">Want result like this?</p>
             </li>
             <li>
               <a href="aboutus.html"
                 ><p>About us</p></a>
-                <br />
-                <p class="small-p">Learn More about us</p>
             </li>
             <li>
               <a href="category.html"
                 ><p>Industries</p></a>
-                <br />
-                <p class="small-p">Expertise Spanning Sectors</p>
             </li>
           </ul>
         </div>
@@ -114,7 +114,6 @@
                     <p class="small-p">Software Integration</p>
                     <br />
                     <p class="small-p">Sales Funnel and Pipelines</p>
-                  
                 </li>
               </ul>
             </div>
@@ -129,14 +128,16 @@
 
     <div class="hero">
       <div style="position: relative; z-index: 2">
-        <div class="text"><p>Automation Agency</p></div>
-        <h1>Automate your marketing, Scale your Business</h1>
-        <h5>
+        <div class="text" data-aos="fade-up"><p>Automation Agency</p></div>
+        <h1 data-aos="fade-up" data-aos-delay="100">
+          Automate your marketing, Scale your Business
+        </h1>
+        <h5 data-aos="fade-up" data-aos-delay="150">
           We’ll take care of your marketing to-do list so you can focus on
           growing your business.
         </h5>
 
-        <div class="button">
+        <div class="button" data-aos="fade-up" data-aos-delay="200">
           <div class="cta-p">
             <a href="#"><p>Book a Call</p></a>
           </div>
@@ -144,18 +145,19 @@
             <a href="#"><p>Get a Demo</p></a>
           </div>
         </div>
-
-        <div class="token">
-          <h3>100+</h3>
-          <div class="avatar-s">
-            <div><img src="images/avatar1.png" alt="" /></div>
-            <div><img src="images/avatar2.png" alt="" /></div>
-            <div><img src="images/avatar3.png" alt="" /></div>
+        <div data-aos="fade-up" data-aos-delay="250">
+          <div class="token">
+            <h3>100+</h3>
+            <div class="avatar-s">
+              <div><img src="images/avatar1.png" alt="" /></div>
+              <div><img src="images/avatar2.png" alt="" /></div>
+              <div><img src="images/avatar3.png" alt="" /></div>
+            </div>
           </div>
-        </div>
-        <div class="join"><p>Join our partners worldwide</p></div>
 
-        <div class="video">
+          <div class="join"><p>Join our partners worldwide</p></div>
+        </div>
+        <div class="video" data-aos="fade-up" data-aos-delay="350">
           <iframe
             width="1040px"
             height="615"
@@ -175,7 +177,7 @@
 
     <!-- advertise section  -->
 
-    <div class="advert">
+    <div class="advert" data-aos="fade-zoom-in">
       <p>
         Trusted By 10M+ Companies. Leading businesses choose us to unlock the
         power of automation
@@ -196,7 +198,7 @@
 
     <div class="feature">
       <div class="container">
-        <div class="desc">
+        <div class="desc" data-aos="fade-up">
           <h3>Are you <span>Struggling With...</span></h3>
           <div>
             <i class="fa-regular fa-circle-check"></i>
@@ -223,11 +225,11 @@
             <h5>Unreliable Freelancers</h5>
           </div>
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left">
           <img src="images/image1.png" alt="" />
         </div>
       </div>
-      <div class="container-m">
+      <div class="container-m" data-aos="fade-up">
         <h3>Are you <span>Struggling With...</span></h3>
         <div class="seg">
           <div class="desc-1">
@@ -265,10 +267,10 @@
       </div>
 
       <div class="container">
-        <div class="image">
+        <div class="image" data-aos="fade-right">
           <img src="images/image2.png" alt="" />
         </div>
-        <div class="desc">
+        <div class="desc" data-aos="fade-up">
           <h3>
             Your on-demand Automation <br />
             team , <span>Right at your fingertips</span>
@@ -287,7 +289,7 @@
           </h5>
         </div>
       </div>
-      <div class="container-m">
+      <div class="container-m" data-aos="fade-up">
         <div class="desc-m">
           <h3>
             Your on-demand Automation team,
@@ -313,15 +315,21 @@
     <!-- solution section  -->
 
     <div class="solution">
-      <h3>We Have The <span>Automation Solution</span></h3>
-      <img src="images/solution.png" alt="" />
+      <h3 data-aos="fade-up">We Have The <span>Automation Solution</span></h3>
+      <img
+        data-aos="fade-up"
+        data-aos-offset="500"
+        data-aos-delay="100"
+        src="images/solution.png"
+        alt=""
+      />
     </div>
 
     <!-- dotted section  -->
 
     <div class="dotted">
       <div class="crm">
-        <div class="desc">
+        <div class="desc" data-aos="fade-up">
           <h3>Automated CRM</h3>
           <h5>
             Ditch the busywork and build lasting customer connections with an
@@ -334,13 +342,16 @@
             matters: building strong relationships and closing deals.
           </h5>
           <a href="#">
-            <div class="learn-more">Learn More <br /> <i class="fa-solid fa-arrow-right"></i></div>
+            <div class="learn-more">
+              Learn More <br />
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
           </a>
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left">
           <img src="images/crm1.png" alt="" />
         </div>
-        <div class="desc-m">
+        <div class="desc-m" data-aos="fade-up">
           <h3>Automated CRM</h3>
           <h5>
             Ditch the busywork and build lasting customer connections with an
@@ -358,15 +369,15 @@
               <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
-        <div class="image-m">
+        <div class="image-m" data-aos="fade-up">
           <img src="images/crm1.png" alt="" />
         </div>
       </div>
       <div class="crm">
-        <div class="image">
+        <div class="image" data-aos="fade-right">
           <img src="images/crm2.png" alt="" />
         </div>
-        <div class="desc">
+        <div class="desc" data-aos="fade-up">
           <h3>Marketing Automation</h3>
           <h5>
             We are passionate marketing professional with [number] years of
@@ -384,7 +395,7 @@
           ></a>
         </div>
 
-        <div class="desc-m">
+        <div class="desc-m" data-aos="fade-up">
           <h3>Marketing Automation</h3>
           <h5>
             We are passionate marketing professional with [number] years of
@@ -400,12 +411,12 @@
               Learn More <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
-        <div class="image-m">
+        <div class="image-m" data-aos="fade-up">
           <img src="images/crm2.png" alt="" />
         </div>
       </div>
       <div class="crm">
-        <div class="desc">
+        <div class="desc" data-aos="fade-up">
           <h3>Software integration</h3>
           <h5>
             We are skilled software integration specialist, adept at
@@ -423,10 +434,10 @@
               Learn More <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left">
           <img src="images/crm3.png" alt="" />
         </div>
-        <div class="desc-m">
+        <div class="desc-m" data-aos="fade-up">
           <h3>Software integration</h3>
           <h5>
             We are skilled software integration specialist, adept at
@@ -444,7 +455,7 @@
               Learn More <i class="fa-solid fa-arrow-right"></i></div
           ></a>
         </div>
-        <div class="image-m">
+        <div class="image-m" data-aos="fade-up">
           <img src="images/crm3.png" alt="" />
         </div>
       </div>
@@ -454,16 +465,30 @@
 
     <!-- testimonial section  -->
 
-    <div class="testimonial">
+    <div class="testimonial" id="g-testimonial">
       <div>
-        <div class="text"><p>Testimonial</p></div>
-        <h3>What People Say <span>About Us</span></h3>
-        <h4>
+        <div
+          data-aos="fade-up"
+          data-aos-offset="0"
+          data-aos-anchor="#g-testimonial"
+          data-aos-anchor-placement="bottom-bottom"
+          class="text"
+        >
+          <p>Testimonial</p>
+        </div>
+        <h3 data-aos="fade-up" data-aos-delay="100">
+          What People Say<span>About Us</span>
+        </h3>
+        <h4 data-aos="fade-up" data-aos-delay="150">
           Discover what our satisfied customers want to say about their
           experience with our service
         </h4>
       </div>
-      <div class="card testimonialSlider">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="card testimonialSlider"
+      >
         <div class="slideInner"><img src="images/testi.png" alt="" /></div>
         <div class="slideInner"><img src="images/testi.png" alt="" /></div>
         <div class="slideInner"><img src="images/testi.png" alt="" /></div>
@@ -478,122 +503,126 @@
     <!-- faq section -->
 
     <div id="wrapper">
-      <div class="text"><p>FAQ</p></div>
-      <h3>Have a question? <span>Look here</span></h3>
-      <div class="head">
-        <div>
-          <a href="#"><h4 class="head-1">General</h4></a>
+      <div data-aos="fade-up" class="text"><p>FAQ</p></div>
+      <h3 data-aos="fade-up" data-aos-delay="100">
+        Have a question? <span>Look here</span>
+      </h3>
+      <div data-aos="fade-up" data-aos-delay="150">
+        <!-- <div class="head">
+          <div>
+            <a href="#"><h4 class="head-1">General</h4></a>
+          </div>
+          <div class="head-2">
+            <a href="#"><h4>Services</h4></a>
+          </div>
+          <div class="head-3">
+            <a href="#"><h4>Billing</h4></a>
+          </div>
         </div>
-        <div class="head-2">
-          <a href="#"><h4>Services</h4></a>
+        <div class="line">
+          <div class="hr" id="hr-1"></div>
+          <div class="hr"></div>
+          <div class="hr"></div>
         </div>
-        <div class="head-3">
-          <a href="#"><h4>Billing</h4></a>
+        <div class="line">
+          <div class="hr-m" id="hr-1"></div>
+          <div class="hr-m"></div>
+          <div class="hr-m"></div>
+        </div> -->
+        <!-- 1 -->
+        <div class="faq">
+          <button class="question">
+            <p>What services does your automated marketing agency provide?</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="answer">
+            <p>
+              Our agency offers a comprehensive range of services including
+              social media management, search engine optimization (SEO),
+              pay-per-click advertising (PPC), email marketing, content
+              creation, and website design.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="line">
-        <div class="hr" id="hr-1"></div>
         <div class="hr"></div>
+
+        <!-- 2 -->
+        <div class="faq">
+          <button class="question">
+            <p>What services does your automated marketing agency provide?</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="answer">
+            <p>
+              Our agency offers a comprehensive range of services including
+              social media management, search engine optimization (SEO),
+              pay-per-click advertising (PPC), email marketing, content
+              creation, and website design.
+            </p>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <!-- 3 -->
+        <div class="faq">
+          <button class="question">
+            <p>What services does your automated marketing agency provide?</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="answer">
+            <p>
+              Our agency offers a comprehensive range of services including
+              social media management, search engine optimization (SEO),
+              pay-per-click advertising (PPC), email marketing, content
+              creation, and website design.
+            </p>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <!-- 4 -->
+        <div class="faq">
+          <button class="question">
+            <p>What services does your automated marketing agency provide?</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="answer">
+            <p>
+              Our agency offers a comprehensive range of services including
+              social media management, search engine optimization (SEO),
+              pay-per-click advertising (PPC), email marketing, content
+              creation, and website design.
+            </p>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <!-- 5 -->
+        <div class="faq">
+          <button class="question">
+            <p>What services does your automated marketing agency provide?</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="answer">
+            <p>
+              Our agency offers a comprehensive range of services including
+              social media management, search engine optimization (SEO),
+              pay-per-click advertising (PPC), email marketing, content
+              creation, and website design.
+            </p>
+          </div>
+        </div>
         <div class="hr"></div>
       </div>
-      <div class="line">
-        <div class="hr-m" id="hr-1"></div>
-        <div class="hr-m"></div>
-        <div class="hr-m"></div>
-      </div>
-      <!-- 1 -->
-      <div class="faq">
-        <button class="question">
-          <p>What services does your automated marketing agency provide?</p>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="answer">
-          <p>
-            Our agency offers a comprehensive range of services including social
-            media management, search engine optimization (SEO), pay-per-click
-            advertising (PPC), email marketing, content creation, and website
-            design.
-          </p>
-        </div>
-      </div>
-      <div class="hr"></div>
-
-      <!-- 2 -->
-      <div class="faq">
-        <button class="question">
-          <p>What services does your automated marketing agency provide?</p>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="answer">
-          <p>
-            Our agency offers a comprehensive range of services including social
-            media management, search engine optimization (SEO), pay-per-click
-            advertising (PPC), email marketing, content creation, and website
-            design.
-          </p>
-        </div>
-      </div>
-      <div class="hr"></div>
-
-      <!-- 3 -->
-      <div class="faq">
-        <button class="question">
-          <p>What services does your automated marketing agency provide?</p>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="answer">
-          <p>
-            Our agency offers a comprehensive range of services including social
-            media management, search engine optimization (SEO), pay-per-click
-            advertising (PPC), email marketing, content creation, and website
-            design.
-          </p>
-        </div>
-      </div>
-      <div class="hr"></div>
-
-      <!-- 4 -->
-      <div class="faq">
-        <button class="question">
-          <p>What services does your automated marketing agency provide?</p>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="answer">
-          <p>
-            Our agency offers a comprehensive range of services including social
-            media management, search engine optimization (SEO), pay-per-click
-            advertising (PPC), email marketing, content creation, and website
-            design.
-          </p>
-        </div>
-      </div>
-      <div class="hr"></div>
-
-      <!-- 5 -->
-      <div class="faq">
-        <button class="question">
-          <p>What services does your automated marketing agency provide?</p>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-        <div class="answer">
-          <p>
-            Our agency offers a comprehensive range of services including social
-            media management, search engine optimization (SEO), pay-per-click
-            advertising (PPC), email marketing, content creation, and website
-            design.
-          </p>
-        </div>
-      </div>
-      <div class="hr"></div>
     </div>
 
     <!-- contact section starts -->
 
     <div class="contact">
-      <h3>Need Our Help to</h3>
-      <span>Grow Your Business?</span>
+      <h3 data-aos="fade-up">Need Our Help to</h3>
+      <span data-aos="fade-up" data-aos-delay="100">Grow Your Business?</span>
 
-      <div class="button">
+      <div class="button" data-aos="fade-up" data-aos-delay="150">
         <a href="#"
           ><div class="cta"><p>Book a call</p></div></a
         >
@@ -601,7 +630,7 @@
           ><div class="cta-m"><p>Book a call</p></div></a
         >
         <a href="#"
-          ><div class="cta-s"><p>Get a Demo</p></div></a
+          ><div class="cta-s"><p>Explore our offerings</p></div></a
         >
       </div>
       <div class="bg"><img src="images/background_wave.png" alt="" /></div>
@@ -627,24 +656,22 @@
           <h4 id="foot-h">Why Us?</h4>
           <p id="foot-p">Why Our Company</p>
           <a href="obm.html">
-            <p id="foot-p">Our Company vs Online Business Manager</p>
+            <p id="foot-p">Our Company vs <br>Online Business Manager</p>
           </a>
           <a href="customer.html">
             <p id="foot-p">Customer Stories</p>
-          </a>
-          <a href="#">
-            <p id="foot-p">Contact Us</p>
           </a>
         </div>
         <div id="m">
           <h4 id="foot-h">Resources</h4>
           <p id="foot-p">Book A Call</p>
           <p id="foot-p">Watch Demo</p>
-          <p id="foot-p">Design Portfolio</p>
+          <a href="portfolio.html">
+            <p id="foot-p">Portfolio</p>
+          </a>
           <a href="platform.html">
             <p id="foot-p">Supported Platforms</p>
           </a>
-          <p id="foot-p">Blogs</p>
         </div>
       </div>
 
@@ -655,8 +682,15 @@
     <!-- jq cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       $(document).ready(function () {
+        AOS.init();
+        setTimeout(() => {
+          AOS.refresh();
+        }, 1000);
         $(".testimonialSlider").slick({
           dots: true,
           infinite: true,
