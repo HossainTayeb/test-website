@@ -89,7 +89,7 @@ a {
   color: rgba(255, 95, 0, 1);
 }
 li p {
-  font-weight: 700;
+  font-weight: 400;
 }
 li {
   margin-bottom: 1rem;
@@ -106,8 +106,8 @@ li {
 .sub-menu {
   background-color: rgba(255, 255, 255, 1);
   margin-top: 1rem;
-  margin-left: -3rem;
-  padding: 2rem;
+  margin-left: 0;
+  padding: 1.5rem 2.5rem;
   list-style-type: none;
   position: absolute;
   border: 1px solid rgba(153, 153, 153, 1);
@@ -649,6 +649,7 @@ img {
   }
 
   .dark h3 {
+    margin-top: 16px;
     font-size: 24px;
   }
   .dark > h5 {
@@ -656,6 +657,8 @@ img {
     line-height: 17px;
     margin: 0;
   }
+
+  
   .value {
     text-align: center;
     padding: 40px 0;
