@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/images/Favicon - Nusanse.svg">
+    <link rel="icon" type="image/x-icon" href="/images/Favicon - Nusanse.svg" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,268 +29,273 @@
     />
     <!-- stylesheet  -->
     <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="navbar.css" />
   </head>
   <body>
     <!-- navbar  -->
+    <div>
+      <div class="containerWrp">
+        <div class="navbar">
+          <div class="logo">
+            <img
+              src="images/logo - Nusanse.svg"
+              alt=""
+              height="32px"
+              width="155px"
+            />
+          </div>
 
-    <div class="navbar">
-      <div class="logo">
-        <img src="images/logo - Nusanse.svg" alt="" height="32px" width="155px" />
-      </div>
+          <div class="hamburger-menu">
+            <div class="hamburger"></div>
+          </div>
 
-      <div class="hamburger-menu">
-        <div class="hamburger"></div>
-      </div>
-
-      <div class="nav">
-        <a href="index.html">Home </a>
-        <div class="about-nav">
-          <a
-            style="
-              color: rgba(255, 95, 0, 1);
-              background-color: rgba(255, 239, 230, 1);
-              padding: 4px 8px;
-              border-radius: 8px;
-            "
-            href="#"
-            >About us &nbsp;<i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <ul class="sub-menu">
-            <li>
-              <a href="portfolio.html"
-                ><p>Portfolio</p></a>
-                <br />
-                <p class="small-p">Want result like this?</p>
-            </li>
-            <li>
-              <a href="aboutus.html"
-                ><p>About us</p></a>
-                <br />
-                <p class="small-p">Learn More about us</p>
-            </li>
-            <li>
-              <a href="category.html"
-                ><p>Industries</p></a>
-                <br />
-                <p class="small-p">Expertise Spanning Sectors</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="services-nav">
-          <a href="#"
-            >Services &nbsp;<i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <div class="horizontal">
-            <!-- <div>
-                  <ul class="sub-menu-s">
-                      <li>
-                          <a href="#"><p>By Platform</p><br>
-                              <p class="small-p">Active Campaign</p><br>
-                              <p class="small-p">Keap</p><br>
-                              <p class="small-p">Ontraport</p><br>
-                              <p class="small-p" style="color: rgba(255, 95, 0, 1);">Others &nbsp; <i class="fa-solid fa-arrow-right"></i></p><br>
-                          </a>
-                      </li>
-                  </ul>
-              </div> -->
-            <div>
-              <ul class="sub-menu-s">
+          <div class="nav">
+            <a
+              href="index.html"
+              style="
+                color: rgba(255, 95, 0, 1);
+                background-color: rgba(255, 239, 230, 1);
+                padding: 4px 8px;
+                border-radius: 8px;
+              "
+              >Home
+            </a>
+            <div class="about-nav hasSubMenu">
+              <a href="#"
+                >About us &nbsp;<i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
                 <li>
-                  <a href=“services.html”
-                    ><p>Marketing Automation</p></a>
-                    <br />
-                    <p class="small-p">CRM Management</p>
-                    <br />
-                    <p class="small-p">Software Integration</p>
-                    <br />
-                    <p class="small-p">Sales Funnel and Pipelines</p>
+                  <a href="portfolio.html"><p>Portfolio</p></a>
+                </li>
+                <li>
+                  <a href="aboutus.html"><p>About us</p></a>
+                </li>
+                <li>
+                  <a href="category.html"><p>Industries</p></a>
                 </li>
               </ul>
             </div>
+
+            <div class="services-nav hasSubMenu">
+              <a href="#"
+                >Services &nbsp;<i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="horizontal">
+                <!-- <div>
+                    <ul class="sub-menu-s">
+                        <li>
+                            <a href="#"><p>By Platform</p><br>
+                                <p class="small-p">Active Campaign</p><br>
+                                <p class="small-p">Keap</p><br>
+                                <p class="small-p">Ontraport</p><br>
+                                <p class="small-p" style="color: rgba(255, 95, 0, 1);">Others &nbsp; <i class="fa-solid fa-arrow-right"></i></p><br>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div>
+                  <ul class="sub-menu-s">
+                    <li>
+                      <a href="services.html"><p>Marketing Automation</p></a>
+                      <br />
+                      <p class="small-p">CRM Management</p>
+                      <br />
+                      <p class="small-p">Software Integration</p>
+                      <br />
+                      <p class="small-p">Sales Funnel and Pipelines</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="#wrapper">FAQ</a>
           </div>
+          <a href="#"><div class="cta">Book a Call</div></a>
         </div>
-        <a href="#wrapper">FAQ</a>
       </div>
-      <a href="#"><div class="cta">Book a Call</div></a>
     </div>
 
     <!-- portfolio section  -->
+    <div class="containerWrp">
+      <div class="portfolio">
+        <div class="text"><p>Portfolio</p></div>
+        <h3>Our <span>Portfolio</span></h3>
+        <h5>
+          Here are some of our best work sample that our team has done for our
+          clients.
+        </h5>
 
-    <div class="portfolio">
-      <div class="text"><p>Portfolio</p></div>
-      <h3>Our <span>Portfolio</span></h3>
-      <h5>
-        Here are some of our best work sample that our team has done for our
-        clients.
-      </h5>
+        <div class="click filter">
+          <button  data-filter="all"><p>All items</p></button>
+          <button data-filter=".category-lead">
+            <p>Lead Generation and Management</p>
+          </button>
+          <button data-filter=".category-automation">
+            <p>Marketing Automation</p>
+          </button>
+          <button data-filter=".category-funnel">
+            <p>Sales Funnels and Pipelines</p>
+          </button>
+          <button data-filter=".category-crm"><p>CRM</p></button>
+        </div>
 
-      <div class="click">
-        <div id="clicked"><p>All items</p></div>
-        <div><p>Lead Generation and Management</p></div>
-        <div><p>Marketing Automation</p></div>
-        <div><p>Sales Funnels and Pipelines</p></div>
-        <div><p>CRM</p></div>
-      </div>
+        <div class="p-images">
+          <div class="mixItem category-lead">
+            <a href="p_inner.html">
+              <img src="images/port-1.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="mixItem category-lead">
+            <a href="p_inner.html">
+              <img src="images/port-2.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
 
-      <div class="p-images">
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-1.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
+          <div class="mixItem category-crm">
+            <a href="p_inner.html">
+              <img src="images/port-3.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
               </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
+            </a>
+          </div>
+          <div class="mixItem category-lead">
+            <a href="p_inner.html">
+              <img src="images/port-4.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-2.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
+            </a>
+          </div>
+
+          <div class="mixItem category-automation">
+            <a href="p_inner.html">
+              <img src="images/port-5.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
               </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
+            </a>
+          </div>
+          <div class="mixItem category-automation">
+            <a href="p_inner.html">
+              <img src="images/port-6.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="p-images">
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-3.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
+            </a>
+          </div>
+
+          <div class="mixItem category-crm">
+            <a href="p_inner.html">
+              <img src="images/port-7.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
               </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
+            </a>
+          </div>
+          <div class="mixItem category-funnel">
+            <a href="p_inner.html">
+              <img src="images/port-8.png" alt="" />
+              <div class="desc">
+                <div>
+                  <h5>Coinflo - Cryptocurrency</h5>
+                  <p>Branding, Copywriting, Hosting and Support</p>
+                </div>
+                <div class="arrow">
+                  <img
+                    src="images/port-up-right.png"
+                    alt=""
+                    width="48px"
+                    height="48px"
+                  />
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-4.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
-              </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="p-images">
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-5.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
-              </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
-              </div>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-6.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
-              </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="p-images">
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-7.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
-              </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
-              </div>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="p_inner.html">
-            <img src="images/port-8.png" alt="" />
-            <div class="desc">
-              <div>
-                <h5>Coinflo - Cryptocurrency</h5>
-                <p>Branding, Copywriting, Hosting and Support</p>
-              </div>
-              <div class="arrow">
-                <img
-                  src="images/port-up-right.png"
-                  alt=""
-                  width="48px"
-                  height="48px"
-                />
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -298,58 +303,71 @@
     <!-- contact section starts -->
 
     <div class="contact">
-      <h3>Need Our Help to</h3>
-      <span>Grow Your Business?</span>
+      <div class="containerWrp">
+        <h3>Need Our Help to</h3>
+        <span>Grow Your Business?</span>
 
-      <div class="button">
-        <a href="#"
-          ><div class="cta"><p>Book a call</p></div></a
+        <div
+          class="button"
+          style="justify-content: center; align-items: center"
         >
-        <a href="#"
-          ><div class="cta-s"><p>Get a Demo</p></div></a
-        >
+          <a href="#"
+            ><div class="cta"><p>Book a call</p></div></a
+          >
+          <a href="#"
+            ><div class="cta-s"><p>Get a Demo</p></div></a
+          >
+        </div>
       </div>
+
       <div class="bg"><img src="images/background_wave.png" alt="" /></div>
     </div>
 
     <!-- footer section  -->
 
     <footer>
-      <div class="footer">
-        <div class="brand">
-          <div class="logo">
-            <img src="images/logo - Nusanse.svg" alt="" height="32px" width="155px" />
-          </div>
-          <p>From brand creation to revenue generation.</p>
-          <div class="social">
-            <div><i class="fa-brands fa-instagram"></i></div>
-            <div><i class="fa-brands fa-twitter"></i></div>
-            <div><i class="fa-brands fa-linkedin-in"></i></div>
-          </div>
-        </div>
+      <div style="background: #ffcdb0">
+        <div class="containerWrp">
+          <div class="footer">
+            <div class="brand">
+              <div class="logo">
+                <img
+                  src="images/logo - Nusanse.svg"
+                  alt=""
+                  height="32px"
+                  width="155px"
+                />
+              </div>
+              <p>From brand creation to revenue generation.</p>
+              <div class="social">
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-linkedin-in"></i></div>
+              </div>
+            </div>
 
-        <div class="hideMob">
-          <h4 id="foot-h">Why Us?</h4>
-          <p id="foot-p">Why Our Company</p>
-          <a href="obm.html">
-            <p id="foot-p">Our Company vs Online Business Manager</p>
-          </a>
-          <a href="customer.html">
-            <p id="foot-p">Customer Stories</p>
-          </a>
-          <a href="#">
-            <p id="foot-p">Contact Us</p>
-          </a>
-        </div>
-        <div class="hideMob">
-          <h4 id="foot-h">Resources</h4>
-          <p id="foot-p">Book A Call</p>
-          <p id="foot-p">Watch Demo</p>
-          <p id="foot-p">Design Portfolio</p>
-          <a href="platform.html">
-            <p id="foot-p">Supported Platforms</p>
-          </a>
-          <p id="foot-p">Blogs</p>
+            <div id="m">
+              <h4 id="foot-h">Why Us?</h4>
+              <p id="foot-p">Why Our Company</p>
+              <a href="obm.html">
+                <p id="foot-p">Our Company vs <br />Online Business Manager</p>
+              </a>
+              <a href="customer.html">
+                <p id="foot-p">Customer Stories</p>
+              </a>
+            </div>
+            <div id="m">
+              <h4 id="foot-h">Resources</h4>
+              <p id="foot-p">Book A Call</p>
+              <p id="foot-p">Watch Demo</p>
+              <a href="portfolio.html">
+                <p id="foot-p">Portfolio</p>
+              </a>
+              <a href="platform.html">
+                <p id="foot-p">Supported Platforms</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -357,16 +375,50 @@
         <p>2024 © My Company. All Rights Reserved.</p>
       </div>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        const nav = document.querySelector(".nav");
 
-        hamburgerMenu.addEventListener("click", function () {
-          nav.classList.toggle("show"); // Toggle the 'show' class on the nav
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var mixer = mixitup(".p-images", {
+          selectors: {
+            target: ".mixItem",
+          },
+
+          animation: {
+            duration: 300,
+          },
+        });
+        mixer.filter(".filter" , "all");
+
+        const hamburgerMenu = $(".hamburger-menu");
+        const nav = $(".nav");
+
+        hamburgerMenu.click(function () {
+          if (!nav.hasClass("show")) {
+            //  slide from right animation with jquery
+            nav.addClass("show");
+            nav.animate(
+              {
+                right: "0",
+                ease: "ease-in",
+              },
+              300
+            );
+          } else {
+            nav.animate(
+              {
+                right: "-100%",
+                ease: "ease-out",
+              },
+              300,
+              function () {
+                nav.removeClass("show");
+              }
+            );
+          }
         });
       });
-
       document.querySelectorAll(".question").forEach((item) => {
         item.addEventListener("click", function () {
           // Toggle the 'active' class on the clicked question

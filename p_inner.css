@@ -9,6 +9,12 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
+.containerWrp {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
 h1 {
   font-size: 4.625rem; /* 74px */
   font-weight: 700;
@@ -56,100 +62,11 @@ body {
   color: rgba(34, 34, 34, 1);
 }
 
-/* ---------------------navbar-------------------------------------  */
-
-.navbar {
-  padding: 1rem 6.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav {
-  display: flex;
-  padding: 4px;
-  gap: 3rem;
-}
-a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: rgba(34, 34, 34, 1);
-}
-.cta {
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgba(255, 95, 0, 1);
-  padding: 1rem 2rem;
-  border: 1px solid rgba(255, 95, 0, 1);
-  border-radius: 10px;
-}
-
-/* --------nav bar sub-menu section -------- */
-.nav a:hover {
-  color: rgba(255, 95, 0, 1);
-}
-li p {
-  font-weight: 700;
-}
-li {
-  margin-bottom: 1rem;
-}
-.small-p {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(107, 107, 107, 1);
-  margin-top: -8px;
-  margin-bottom: 8px;
-}
-
-/* --------------------------------------------------------- */
-.sub-menu {
-  background-color: rgba(255, 255, 255, 1);
-  margin-top: 1rem;
-  margin-left: -3rem;
-  padding: 2rem;
-  list-style-type: none;
-  position: absolute;
-  border: 1px solid rgba(153, 153, 153, 1);
-  border-radius: 8px;
-  top: -9999px;
-  z-index: 999;
-}
-.nav .about-nav:hover .sub-menu {
-  top: 2.5rem;
-  pointer-events: auto;
-  z-index: 1;
-}
-
-/* --------------------------------------------------------- */
-.horizontal {
-  display: flex;
-  gap: 3rem;
-
-  background-color: rgba(255, 255, 255, 1);
-  margin-top: 1rem;
-  margin-left: -6rem;
-  padding: 2rem;
-  position: absolute;
-  border: 1px solid rgba(153, 153, 153, 1);
-  border-radius: 8px;
-  top: -999px;
-  z-index: 999;
-}
-
-.sub-menu-s {
-  list-style-type: none;
-}
-.nav .services-nav:hover .horizontal {
-  top: 2.5rem;
-  pointer-events: auto;
-  z-index: 1;
-}
 /* ------------------------------------------------------------ */
 
 /* ----heading section ----  */
 .head {
-  margin: 5.5rem 12.8rem;
+  margin: 5.5rem 0;
   text-align: center;
 }
 .head h1 {
@@ -170,7 +87,7 @@ li {
   display: flex;
   justify-content: space-around;
   padding-top: 390px;
-  margin: 0 12.8rem 5.5rem 12.8rem;
+  margin: 0 0 5.5rem 0;
 }
 .col div h5 {
   color: rgba(107, 107, 107, 1);
@@ -183,7 +100,7 @@ li {
 .p-brief {
   display: flex;
   gap: 10rem;
-  margin: 5.5rem 12.8rem;
+  margin: 5.5rem 0;
   padding-bottom: 5.5rem;
 }
 .p-brief h4 {
@@ -346,75 +263,7 @@ img {
   vertical-align: middle;
 }
 @media only screen and (max-width: 576px) {
-  .navbar {
-    width: 100%;
-    padding: 12px 24px 12px 24px;
-    position: relative;
-  }
-  .nav.show {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background: rgba(255, 250, 236, 1);
-    border-bottom: 1px solid #ededed;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    padding: 30px;
-    padding-top: 15px;
-    padding-bottom: 50px;
-    z-index: 9999;
-  }
-  .nav,
-  .cta {
-    display: none;
-  }
-
-  .sub-menu{
-    margin-top: 48px;
-    margin-left: -8px;
-  }
-  .horizontal{
-    margin-top: 96px;
-    margin-left: -8px;
-  }
-
-
-  /* hamburger-menu section  */
-  .hamburger-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-    margin-right: -128px;
-  }
-
-  .hamburger {
-    width: 32px;
-    height: 2px;
-    background-color: rgba(34, 34, 34, 1);
-    position: relative;
-  }
-
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(34, 34, 34, 1);
-  }
-
-  .hamburger::before {
-    top: -8px;
-  }
-
-  .hamburger::after {
-    bottom: -8px;
-  }
+  
   .about {
     margin: 0 24px;
     flex-direction: column;
@@ -572,7 +421,7 @@ img {
     padding-left: 24px;
     padding-right: 24px;
     justify-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   .hideMob {
     display: none;
@@ -627,6 +476,9 @@ img {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 15px;
+  }
+  .col>div {
+    width: 100%;
   }
   .head {
     margin: 20px 24px;

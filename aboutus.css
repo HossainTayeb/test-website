@@ -9,6 +9,11 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+.containerWrp {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
 h1 {
   font-size: 4.625rem; /* 74px */
   font-weight: 700;
@@ -58,100 +63,12 @@ body {
 
 /* ---------------------navbar-------------------------------------  */
 
-.navbar {
-  padding: 1rem 6.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav {
-  display: flex;
-  padding: 4px;
-  gap: 3rem;
-}
-a {
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: rgba(34, 34, 34, 1);
-}
-.cta {
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgba(255, 95, 0, 1);
-  padding: 1rem 2rem;
-  border: 1px solid rgba(255, 95, 0, 1);
-  border-radius: 10px;
-}
-
-/* --------nav bar sub-menu section -------- */
-.nav a:hover {
-  color: rgba(255, 95, 0, 1);
-}
-li p {
-  font-weight: 400;
-}
-li {
-  margin-bottom: 1rem;
-}
-.small-p {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(107, 107, 107, 1);
-  margin-top: -8px;
-  margin-bottom: 8px;
-}
-
-/* --------------------------------------------------------- */
-.sub-menu {
-  background-color: rgba(255, 255, 255, 1);
-  margin-top: 1rem;
-  margin-left: 0;
-  padding: 1.5rem 2.5rem;
-  list-style-type: none;
-  position: absolute;
-  border: 1px solid rgba(153, 153, 153, 1);
-  border-radius: 8px;
-  top: -9999px;
-  z-index: 999;
-}
-.nav .about-nav:hover .sub-menu {
-  top: 2.5rem;
-  pointer-events: auto;
-  z-index: 1;
-}
-
-/* --------------------------------------------------------- */
-.horizontal {
-  display: flex;
-  gap: 3rem;
-
-  background-color: rgba(255, 255, 255, 1);
-  margin-top: 1rem;
-  margin-left: -6rem;
-  padding: 2rem;
-  position: absolute;
-  border: 1px solid rgba(153, 153, 153, 1);
-  border-radius: 8px;
-  top: -999px;
-  z-index: 999;
-}
-
-
-.sub-menu-s {
-  list-style-type: none;
-}
-.nav .services-nav:hover .horizontal {
-  top: 2.5rem;
-  pointer-events: auto;
-  z-index: 1;
-}
 /* ------------------------------------------------------------ */
 
 /* ----about section ---- */
 
 .about {
-  margin: 5.5rem 12.8rem;
+  margin: 5.5rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -204,7 +121,7 @@ h5 {
   margin-top: -90px;
   margin-right: -44px;
 }
-.story img{
+.story img {
   width: 160rem;
   height: 293px;
 }
@@ -212,7 +129,7 @@ h5 {
 /* ------stat section ---- */
 
 .stat {
-  margin: 5.5rem 12.8rem;
+  margin: 5.5rem 0;
   display: flex;
   gap: 6rem;
 }
@@ -285,18 +202,30 @@ span {
 }
 
 /* -----value section ---- */
-.slick-dots li button:before{
-    color: #fff !important;
+.slick-dots li button:before {
+  color: #fff !important;
 }
 .value {
-  margin: 5.5rem 12.8rem;
+  margin: 5.5rem 0;
   display: flex;
   gap: 156px;
 }
-.apart h5 {
+.apart button {
   width: 350px;
   margin: 2rem 0;
   color: rgba(107, 107, 107, 1);
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  color: rgba(107, 107, 107, 1);
+  line-height: 30px;
+  text-align: left;
+  cursor: pointer;
+}
+.apart button.active {
+  color: #ff5f00;
 }
 .tp img {
   z-index: 1;
@@ -315,9 +244,15 @@ span {
   z-index: -9;
   color: rgba(255, 95, 0, 1);
 }
-.tp > h5 {
+.tp h5 {
   margin-top: 3rem;
   color: rgba(107, 107, 107, 1);
+}
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block !important;
 }
 
 /* ----work section---- */
@@ -377,7 +312,10 @@ span {
   bottom: 0;
   width: 100%;
 }
-
+.bg img {
+  width: 100%;
+  max-height: 250px;
+}
 .cta {
   font-size: 1rem;
   font-weight: 500;
@@ -404,6 +342,8 @@ span {
 .contact .button {
   margin-top: 4rem;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 .contact .button .cta {
   width: 11rem;
@@ -467,81 +407,13 @@ img {
   vertical-align: middle;
 }
 @media only screen and (max-width: 576px) {
-  .navbar {
-    width: 100%;
-    padding: 12px 24px 12px 24px;
-    position: relative;
-  }
-  .nav.show {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background: rgba(255, 250, 236, 1);
-    border-bottom: 1px solid #ededed;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    padding: 30px;
-    padding-top: 15px;
-    padding-bottom: 50px;
-    z-index: 9999;
-  }
-  .nav,
-  .cta {
-    display: none;
-  }
-  .sub-menu{
-    margin-top: 48px;
-    margin-left: -8px;
-  }
-  .horizontal{
-    margin-top: 96px;
-    margin-left: -8px;
-  }
-
   
-
-  /* hamburger-menu section  */
-  .hamburger-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-    margin-right: -128px;
-  }
-
-  .hamburger {
-    width: 32px;
-    height: 2px;
-    background-color: rgba(34, 34, 34, 1);
-    position: relative;
-  }
-
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: rgba(34, 34, 34, 1);
-  }
-
-  .hamburger::before {
-    top: -8px;
-  }
-
-  .hamburger::after {
-    bottom: -8px;
-  }
   .about {
     margin: 16px 24px;
     flex-direction: column;
     text-align: center;
   }
-  #about-1{
+  #about-1 {
     display: none;
   }
   .about h1 {
@@ -573,11 +445,11 @@ img {
   .story {
     margin: 0 24px;
   }
-  .story h3{
+  .story h3 {
     font-size: 24px;
     margin-bottom: 16px;
   }
-  .story span{
+  .story span {
     font-size: 24px;
   }
   .story .container {
@@ -591,7 +463,7 @@ img {
   .story .container img {
     margin-top: 0;
   }
-  .story img{
+  .story img {
     width: 382px;
     height: 279px;
   }
@@ -602,7 +474,8 @@ img {
     padding: 40px 0;
     flex-direction: column;
   }
-  .stat h3, span{
+  .stat h3,
+  span {
     font-size: 24px;
   }
   .stat .left {
@@ -618,7 +491,8 @@ img {
     font-size: 24px;
     text-align: center;
   }
-  .stat div h5, p {
+  .stat div h5,
+  p {
     font-size: 14px;
   }
   .stat div p {
@@ -658,7 +532,6 @@ img {
     margin: 0;
   }
 
-  
   .value {
     text-align: center;
     padding: 40px 0;
@@ -674,7 +547,7 @@ img {
   .value span {
     font-size: 24px;
   }
-  .apart h5{
+  .apart button {
     font-size: 16px;
     margin-bottom: 16px;
   }
@@ -719,8 +592,12 @@ img {
   .contact span {
     font-size: 24px;
   }
-  .contact .button{
+  .contact .button {
     margin-top: 24px;
+    flex-direction: column;
+  }
+  .contact .button .cta {
+    display: block;
   }
   .footer {
     display: flex;
@@ -729,18 +606,18 @@ img {
     padding-left: 24px;
     padding-right: 24px;
     justify-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   .hideMob {
     display: none;
   }
-  .brand{
+  .brand {
     margin-right: 0;
   }
   .footer h4 {
     font-weight: 700;
   }
-  
+
   .brand .logo {
     margin-bottom: 1rem;
   }
