@@ -535,6 +535,7 @@ img {
   }
   .dark h5{
     color: rgba(225, 225, 225, 1);
+    font-size: 14px;
   }
 
   .value {
