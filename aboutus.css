@@ -52,6 +52,7 @@ span {
   height: 1px;
   width: 100%;
   background-color: rgba(225, 225, 225, 1);
+  display: none;
 }
 
 /* body */
@@ -100,7 +101,7 @@ h5 {
 /* ------story section------ */
 
 .story {
-  margin: 5.5rem 12.8rem;
+  margin: 7.5rem 12.8rem;
 }
 .story h3 {
   text-align: center;
@@ -129,7 +130,7 @@ h5 {
 /* ------stat section ---- */
 
 .stat {
-  margin: 5.5rem 0;
+  margin: 7.5rem 0;
   display: flex;
   gap: 6rem;
 }
@@ -206,7 +207,7 @@ span {
   color: #fff !important;
 }
 .value {
-  margin: 5.5rem 0;
+  margin: 7.5rem 0;
   display: flex;
   gap: 156px;
 }
@@ -257,7 +258,7 @@ span {
 
 /* ----work section---- */
 .work {
-  padding: 5.5rem 12.8rem;
+  padding: 0 12.8rem;
   text-align: center;
 }
 .work h5 {
@@ -518,7 +519,7 @@ img {
     width: 60%;
   }
   .dark {
-    margin: 104px 0 40px 0;
+    margin: 40px 0;
     padding: 40px 24px;
   }
 
@@ -530,6 +531,10 @@ img {
     font-size: 14px;
     line-height: 17px;
     margin: 0;
+    color: rgba(255, 250, 236, 1);
+  }
+  .dark h5{
+    color: rgba(225, 225, 225, 1);
   }
 
   .value {
@@ -564,7 +569,7 @@ img {
     line-height: 1.4;
   }
   .work {
-    padding: 40px 24px;
+    padding: 56px 24px;
   }
   .work h5 {
     font-size: 15px;
@@ -587,6 +592,7 @@ img {
   }
   .contact {
     padding: 40px 24px;
+    margin-top: 0;
   }
   .contact h3,
   .contact span {
@@ -632,6 +638,7 @@ img {
     color: rgba(254, 254, 254, 1);
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
   }
   .social div {
     width: 24px;
@@ -642,6 +649,9 @@ img {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease;
+  }
+  #foot-h{
+    margin-bottom: 16px;
   }
 
   .copyright {
