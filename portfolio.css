@@ -274,6 +274,12 @@ span {
   margin-bottom: 1rem;
 }
 @media only screen and (max-width: 576px) {
+  h3{
+    font-size: 24px;
+  }
+  span{
+    font-size: 24px;
+  }
   .sub-menu {
     margin-top: 48px;
     margin-left: -8px;
@@ -541,6 +547,7 @@ span {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 40px;
   }
   .p-images > div {
     width: 100%;
@@ -548,5 +555,27 @@ span {
   .portfolio > h5 {
     font-size: 15px;
     line-height: 1.4;
+    margin-bottom: 40px;
+  }
+
+  .portfolio h3{
+    margin: 16px 0;
+  }
+  p{
+    font-size: 14px;
+  }
+  .desc h5{
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .contact{
+    margin-top: 0;
+  }
+  .contact .button{
+    margin-top: 24px;
+  }
+  #foot-h{
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
 }

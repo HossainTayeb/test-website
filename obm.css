@@ -173,7 +173,7 @@ span {
   display: flex;
   position: relative;
   z-index: 1;
-  flex-direction: column;
+  flex-direction: row;
 }
 .bg {
   position: absolute;
@@ -432,11 +432,15 @@ img {
     transform: rotate(90deg);
   }
   .contact {
+    margin-top: 40px;
     padding: 40px 24px;
   }
   .contact h3,
   .contact span {
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .contact .button{
+    margin-top: 24px;
   }
   .footer {
     display: flex;
@@ -456,8 +460,9 @@ img {
   .footer h4 {
     font-weight: 700;
   }
-  .brand {
-    /* margin-left: -88px; */
+  #foot-h{
+    margin-top: 16px;
+    margin-bottom: 8px;
   }
 
   .brand .logo {
@@ -510,11 +515,23 @@ img {
   #obm {
     margin: 0;
   }
+  h3{
+    font-size: 24px;
+  }
+  span{
+    font-size: 24px;
+  }
   .portfolio h3 {
-    font-size: 2rem;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+  .portfolio>h5{
+    font-size: 14px;
+    margin-bottom: 24px;
   }
   h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .obm {
     margin: 20px 24px;
@@ -525,5 +542,13 @@ img {
   }
   .obm div{
     padding: 20px;
+  }
+  .obm p{
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .obm h4{
+    margin-top: 16px;
+    margin-bottom: 8px;
   }
 }

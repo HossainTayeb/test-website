@@ -53,6 +53,7 @@ span {
   height: 1px;
   width: 100%;
   background-color: rgba(225, 225, 225, 1);
+  display: none;
 }
 
 /* body */
@@ -303,7 +304,7 @@ img {
     flex-direction: column;
   }
   .story h5 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .story .container img {
     margin-top: 0;
@@ -412,7 +413,10 @@ img {
   }
   .contact h3,
   .contact span {
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .contact .button{
+    margin-top: 24px;
   }
   .footer {
     display: flex;
@@ -432,9 +436,6 @@ img {
   .footer h4 {
     font-weight: 700;
   }
-  .brand {
-    /* margin-left: -88px; */
-  }
 
   .brand .logo {
     margin-bottom: 1rem;
@@ -444,6 +445,11 @@ img {
     margin-bottom: 40px;
     color: rgba(107, 107, 107, 1);
   }
+  #foot-h{
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
   .social {
     display: flex;
     gap: 1rem;
@@ -487,24 +493,31 @@ img {
     font-size: 2rem;
   }
   .p-brief {
-    margin: 20px 24px;
+    margin: 40px 24px;
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 8px;
+  }
+  .p-brief h4{
+    font-size: 20px;
   }
   h5 {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5;
   }
   .result {
     justify-content: center;
+    gap: 32px;
   }
   .result > div {
     width: 39%;
   }
   h3{
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .like{
+    margin-top: 24px;
   }
 }
