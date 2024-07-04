@@ -251,13 +251,32 @@ img {
 }
 @media only screen and (max-width: 576px) {
   
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  span{
+    font-size: 24px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  p{
+    font-size: 14px;
+  }
 
+  .like{
+    margin-top: 40px;
+  }
   .contact {
     padding: 40px 24px;
   }
   .contact h3,
   .contact span {
-    font-size: 2rem;
+    font-size: 24px;
+  }
+  .contact .button{
+    margin-top: 24px;
   }
 
   .hideMob {
@@ -310,10 +329,10 @@ img {
     margin: 40px 24px;
   }
   .head h1 {
-    font-size: 2rem;
+    font-size: 24px;
   }
   .head span {
-    font-size: 25px;
+    font-size: 24px;
   }
   .yellow {
     padding-left: 24px;
@@ -321,15 +340,16 @@ img {
   }
   .head img {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .yellow h3 {
-    margin: 2rem 24px;
-    font-size: 2rem;
+    margin: 2rem 24px 1rem 24px;
+    font-size: 24px;
     text-align: center;
   }
   .yellow h4 {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
     text-align: center;
   }
@@ -354,6 +374,9 @@ img {
   .brand {
     margin-right: 0;
   }
+  #foot-h{
+    margin-bottom: 16px;
+  }
   .footer h4 {
     font-weight: 700;
   }
@@ -372,6 +395,7 @@ img {
     color: rgba(254, 254, 254, 1);
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
   }
   .social div {
     width: 24px;
