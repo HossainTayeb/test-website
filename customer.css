@@ -89,7 +89,7 @@ body {
 
 #vdo {
   text-align: center;
-  margin: 5.5rem 0 4rem 0;
+  margin: 7.5rem 0 4rem 0;
 }
 #video {
   margin: 2.5rem 0 0 0;
@@ -242,6 +242,9 @@ img {
   .brand {
     margin-right: 0;
   }
+  #foot-h{
+    margin-top: 16px;
+  }
   .footer h4 {
     font-weight: 700;
   }
@@ -260,6 +263,7 @@ img {
     color: rgba(254, 254, 254, 1);
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
   }
   .social div {
     width: 24px;
@@ -281,11 +285,16 @@ img {
   .copyright > p {
     font-size: 14px;
   }
+
+  .portfolio{
+    margin-left: 24px;
+    margin-right: 24px;
+  }
   .portfolio h3{
-    font-size: 2rem;
+    font-size: 24px;
   }
   .portfolio > h5{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.3;
   }
   .card{
@@ -293,12 +302,12 @@ img {
     margin:20px 24px;
   }
   #vdo h3{
-    font-size: 2rem;
+    font-size: 24px;
   }
   #video{
     margin: 20px 24px;
   }
   .contact h3, .contact span{
-    font-size: 2rem;
+    font-size: 24px;
   }
 }
