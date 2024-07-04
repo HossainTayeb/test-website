@@ -851,13 +851,16 @@ img {
   .contact {
     padding: 24px;
   }
+  .contact h3{
+    font-size: 24px;
+  }
 
   .contact > .bg {
     margin-top: 40px;
   }
 
   .contact span {
-    font-size: 2rem;
+    font-size: 24px;
   }
 
   .contact .button {
