@@ -433,8 +433,9 @@ img {
   .footer h4 {
     font-weight: 700;
   }
-  .brand {
-    /* margin-left: -88px; */
+  #foot-h{
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
 
   .brand .logo {

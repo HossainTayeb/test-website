@@ -881,16 +881,22 @@ img {
 
   /* footer section  */
 
-  #m {
+  /* #m {
     display: none;
-  }
+  } */
   .footer {
-    display: flex;
+    display: block;
     background-color: rgba(255, 205, 176, 1);
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
     justify-content: center;
+  }
+
+  #foot-h{
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 16px;
   }
   .footer h4 {
     font-weight: 700;
@@ -930,4 +936,6 @@ img {
   .copyright > p {
     font-size: 14px;
   }
+
+
 }
