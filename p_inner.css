@@ -72,7 +72,7 @@ body {
 }
 .head h1 {
   font-size: 62px;
-  max-width: 571px;
+  max-width: 671px;
   text-align: center;
   margin: auto;
   margin-bottom: 4rem;
@@ -101,8 +101,8 @@ body {
 .p-brief {
   display: flex;
   gap: 10rem;
-  margin: 5.5rem 0;
-  padding-bottom: 5.5rem;
+  margin: 3rem 0;
+  padding-bottom: 2rem;
 }
 .p-brief h4 {
   color: rgba(34, 34, 34, 1);
