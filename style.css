@@ -318,6 +318,29 @@ iframe {
   padding: 20px;
 }
 
+.review{
+  width: 251px;
+  height: 235px;
+  padding: 24px;
+  text-align: left;
+}
+.review h5{
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 1);
+  margin-bottom: 4px;
+}
+.review p{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(107, 107, 107, 1);
+}
+.review i{
+  margin: 1rem 0;
+  color: rgba(255, 196, 3, 1);
+}
+
+
 /* ----faq section----  */
 
 #wrapper {
@@ -766,7 +789,21 @@ img {
     width: 175px;
     height: 182px;
   }
+  .card .slideInner {
+    border: 8px solid rgba(255, 205, 176, 1);
+  }
 
+  .review{
+    width: 175px;
+    height: 183px;
+    padding: 12px;
+  }
+  .review h5{
+    font-size: 14px;
+  }
+  .review p{
+    font-size: 10px;
+  }
   /* ----faq section----  */
 
   #wrapper {
