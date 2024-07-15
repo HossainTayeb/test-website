@@ -76,6 +76,10 @@ body {
   background-color: rgba(255, 95, 0, 1);
 }
 
+.hero img{
+  max-width: none;
+}
+
 /* -----marketing automation-----  */
 
 .automation {
