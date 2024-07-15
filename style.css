@@ -353,7 +353,8 @@ iframe {
 #wrapper > h3 {
   text-align: center;
 }
-#wrapper > h3 {
+#wrapper h3 {
+  text-align: center;
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
