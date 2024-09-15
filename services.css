@@ -365,6 +365,7 @@ body {
 .answer {
   line-height: 1.5rem;
   padding: 0rem 2rem;
+  margin-top: -16px;
   padding-bottom: 1.5rem;
   display: none;
   transition: opacity 0.3s ease;
