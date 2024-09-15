@@ -88,36 +88,44 @@ body {
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
-.click div {
+.click button {
   width: auto;
+  background-color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(255, 95, 0, 1);
   border-radius: 8px;
   padding: 8px 16px;
 }
+.click button:hover{
+  cursor: pointer;
+}
 .click p {
   color: rgba(255, 95, 0, 1);
 }
-#clicked {
+
+
+.click button.mixitup-control-active {
   background-color: rgba(255, 95, 0, 1);
 }
-#clicked p {
+.click button.mixitup-control-active p {
   color: rgba(255, 255, 255, 1);
 }
 
 .c-l {
   margin-top: 4rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* ----testimonial section----  */
 .testimonial {
   text-align: center;
-  margin: 5.5rem 0;
+  margin: 5.5rem 6.25rem;
 }
 .testimonial h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-
 .card {
   display: flex;
   gap: 3rem;
@@ -130,6 +138,29 @@ body {
 .card .slick-slide {
   padding: 20px;
 }
+
+.review{
+  width: 251px;
+  height: 235px;
+  padding: 24px;
+  text-align: left;
+}
+.review h5{
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 1);
+  margin-bottom: 4px;
+}
+.review p{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(107, 107, 107, 1);
+}
+.review i{
+  margin: 1rem 0;
+  color: rgba(255, 196, 3, 1);
+}
+
 
 /* contact section starts */
 
@@ -519,5 +550,49 @@ img {
   }
   .button {
     flex-direction: column;
+  }
+  .testimonial {
+    text-align: center;
+    margin: 40px 0;
+    overflow: hidden;
+  }
+  .testimonial h3 {
+    margin-top: 8px;
+    margin-bottom: 1rem;
+  }
+  .card .slick-slide {
+    padding: 10px;
+  }
+  .card {
+    margin-top: 1rem;
+    margin-left: -31%;
+    margin-right: -31%;
+  }
+  .card img {
+    width: 175px;
+    height: 182px;
+  }
+  .card .slideInner {
+    border: 8px solid rgba(255, 205, 176, 1);
+  }
+
+  .review{
+    width: 175px;
+    height: 183px;
+    padding: 12px;
+  }
+  .review h5{
+    font-size: 14px;
+  }
+  .review p{
+    font-size: 10px;
+  }
+  .click {
+    display: grid;
+    gap: .5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 60%;
+    overflow-x: scroll;
+    justify-content: start;
   }
 }

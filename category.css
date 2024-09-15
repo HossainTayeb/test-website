@@ -216,6 +216,9 @@ span {
   justify-content: center;
   transition: transform 0.3s ease;
 }
+.social a{
+  color: rgba(254, 254, 254, 1);
+}
 .copyright {
   text-align: center;
   background-color: rgba(255, 181, 138, 1);

@@ -99,8 +99,12 @@ body {
 }
 .double {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   margin: 5.5rem 0 4rem 0;
+  justify-content: center;
+}
+.double img{
+  width: 606px;
 }
 .small {
   margin: 1.25rem 0 4rem 0;
@@ -119,17 +123,17 @@ body {
 }
 
 /* ----you may like ----  */
-.like {
+/* .like {
   display: flex;
   gap: 1.25rem;
   margin-top: 4rem;
   margin-bottom: 5.5rem;
-}
+} */
 
 /* contact section starts */
 
 .contact {
-  margin-top: 5.5rem;
+  margin-top: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;

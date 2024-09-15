@@ -182,7 +182,8 @@ span {
 }
 .dark h5{
   color: rgba(175, 175, 175, 1);
-  width: 800px;
+  padding-top: 16px;
+  /* width: 800px; */
   margin: 0 auto;
 }
 .card {
@@ -394,6 +395,9 @@ span {
   justify-content: center;
   transition: transform 0.3s ease;
 }
+.social a{
+  color: rgba(254, 254, 254, 1);
+}
 .copyright {
   text-align: center;
   background-color: rgba(255, 181, 138, 1);
@@ -541,7 +545,7 @@ img {
   .dark h5{
     color: rgba(225, 225, 225, 1);
     font-size: 14px;
-    width: 360px;
+    /* width: 360px; */
   }
 
   .value {

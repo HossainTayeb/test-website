@@ -46,12 +46,14 @@
       <div class="containerWrp">
         <div class="navbar">
           <div class="logo">
-            <img
-              src="images/logo - Nusanse.svg"
-              alt=""
-              height="32px"
-              width="155px"
-            />
+            <a href="index.html">
+              <img
+                src="images/logo - Nusanse.svg"
+                alt=""
+                height="32px"
+                width="155px"
+              />
+            </a>
           </div>
 
           <div class="hamburger-menu">
@@ -61,12 +63,6 @@
           <div class="nav">
             <a
               href="index.html"
-              style="
-                color: rgba(255, 95, 0, 1);
-                background-color: rgba(255, 239, 230, 1);
-                padding: 4px 8px;
-                border-radius: 8px;
-              "
               >Home
             </a>
             <div class="about-nav hasSubMenu">
@@ -113,6 +109,9 @@
                       <p class="small-p">Software Integration</p>
                       <br />
                       <p class="small-p">Sales Funnel and Pipelines</p>
+                      <br>
+                      <a href="services.html"><p>Web Development</p></a>
+
                     </li>
                   </ul>
                 </div>
@@ -137,24 +136,39 @@
           need and scale their business.
         </h5>
 
-        <div class="click">
-          <div id="clicked"><p>All Platforms</p></div>
-          <div><p>3rd Party Integration</p></div>
-          <div><p>Calendar Booking</p></div>
-          <div><p>eCommerce</p></div>
-          <div><p>Email Marketing</p></div>
-          <div><p>Landing Pages</p></div>
-          <div><p>Marketing Automation</p></div>
+        <div class="click filter">
+          <button data-filter="all"><p>All Platforms</p></button>
+          <button data-filter=".party"><p>3rd Party Integration</p></button>
+          <button data-filter=".cal"><p>Calendar Booking</p></button>
+          <button data-filter=".ecom"><p>eCommerce</p></button>
+          <button data-filter=".email"><p>Email Marketing</p></button>
+          <button data-filter=".land"><p>Landing Pages</p></button>
+          <button data-filter=".m-auto"><p>Marketing Automation</p></button>
 
-          <div><p>Membership Sites</p></div>
-          <div><p>Online Form Builder</p></div>
-          <div><p>Payment Processors</p></div>
-          <div><p>Video Hosting</p></div>
-          <div><p>Wordpress Themes</p></div>
+          <button data-filter=".mem"><p>Membership Sites</p></button>
+          <button data-filter=".ofb"><p>Online Form Builder</p></button>
+          <button data-filter=".pay"><p>Payment Processors</p></button>
+          <button data-filter=".video"><p>Video Hosting</p></button>
+          <button data-filter=".word"><p>Wordpress Themes</p></button>
         </div>
 
         <div class="c-l">
-          <img src="images/company-logos.png" alt="" />
+          <div class=" mixItem word"><img src="images/adobe.png" alt=""></div>
+          <div class=" mixItem party"><img src="images/zap.png" alt=""></div>
+          <div class=" mixItem mem"><img src="images/kaj.png" alt=""></div>
+          <div class=" mixItem email m-auto"><img src="images/actv.png" alt=""></div>
+          <div class=" mixItem cal email m-auto"><img src="images/high.png" alt=""></div>
+          <div class=" mixItem email m-auto mem ofb pay"><img src="images/ont.png" alt=""></div>
+          <div class=" mixItem "><img src="images/jot.png" alt=""></div>
+          <div class=" mixItem word"><img src="images/word.png" alt=""></div>
+          <div class=" mixItem email"><img src="images/keap.png" alt=""></div>
+          <div class=" mixItem pay"><img src="images/str.png" alt=""></div>
+          <div class=" mixItem video"><img src="images/vimeo.png" alt=""></div>
+          <div class=" mixItem ecom"><img src="images/woo.png" alt=""></div>
+          <div class=" mixItem word"><img src="images/wp.png" alt=""></div>
+          <div class=" mixItem land"><img src="images/ins.png" alt=""></div>
+          <div class=" mixItem word"><img src="images/cpanel.png" alt=""></div>
+          <div class=" mixItem m-auto"><img src="images/mc.png" alt=""></div>
         </div>
       </div>
     </div>
@@ -162,25 +176,107 @@
     <div class="hr"></div>
 
     <!-- testimonial section  -->
-    <div class="containerWrp">
-      <div class="testimonial">
+    <div class="testimonial" id="g-testimonial">
+      <div class="containerWrp">
         <div>
-          <div class="text"><p>Testimonial</p></div>
-          <h3>What People Say <span>About Us</span></h3>
-          <h4>
-            Discover what our satisfied customers want to say about their <br />
+          <div
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-anchor="#g-testimonial"
+            data-aos-anchor-placement="bottom-bottom"
+            class="text"
+          >
+            <p>Testimonial</p>
+          </div>
+          <h3 data-aos="fade-up" data-aos-delay="100">
+            What People Say<span>About Us</span>
+          </h3>
+          <h4 data-aos="fade-up" data-aos-delay="150">
+            Discover what our satisfied customers want to say about their
             experience with our service
           </h4>
         </div>
-        <div class="card testimonialSlider">
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
-          <div class="slideInner"><img src="images/testi.png" alt="" /></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="card testimonialSlider">
+          <div class="slideInner">
+            <div class="review">
+              <h5>Sarah</h5>
+              <p>Marketing Consultant</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Nusance has been instrumental in boosting our digital presence. Their expertise in digital marketing and smooth communication made our collaboration seamless.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Michael</h5>
+              <p>Small Business Owner</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Choosing Nusance was a wise decision for our online strategy. They delivered results swiftly and kept us informed every step of the way.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Emily</h5>
+              <p>Entrepreneur</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Impressed with Nusance's innovative solutions and proactive approach. They helped scale my startup effectively.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>David</h5>
+              <p>E-commerce Manager</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Nusance optimized our e-commerce platform remarkably well. Their clear communication and technical prowess are commendable.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Jessica</h5>
+              <p>Freelance Designer</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Working with Nusance was a breeze. They understood my design needs and translated them into a user-friendly website.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Andrew</h5>
+              <p>Real Estate Agent</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Nusance revolutionized our digital marketing strategy. Their prompt communication and strategic insights were invaluable.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Olivia</h5>
+              <p>Startup Founder</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Nusance played a crucial role in our startup's growth. Their commitment to results and effective communication set them apart.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Ryan</h5>
+              <p>Digital Marketer</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Nusance's expertise in digital marketing is top-notch. They provided clear communication and delivered impressive results.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Sophia</h5>
+              <p>Event Planner</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>Nusance's attention to detail and proactive communication made our event marketing a success.</p>
+            </div>
+          </div>
+          <div class="slideInner">
+            <div class="review">
+              <h5>Daniel</h5>
+              <p>Consultant</p>
+              <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star" style="color: rgba(230, 230, 230, 1);"></i> 
+              <p>I rely on Nusance for their strategic advice and effective communication. They're a trusted partner in my consulting projects.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -221,15 +317,19 @@
             </div>
             <p>From brand creation to revenue generation.</p>
             <div class="social">
-              <div><i class="fa-brands fa-instagram"></i></div>
+              <a href="https://www.instagram.com/_nusanse?igsh=cms1a2xqODdiM2Zm">
+                <div><i class="fa-brands fa-instagram"></i></div>
+              </a>
               <div><i class="fa-brands fa-twitter"></i></div>
-              <div><i class="fa-brands fa-linkedin-in"></i></div>
+              <a href="https://www.linkedin.com/company/nusanseio">
+                <div><i class="fa-brands fa-linkedin-in"></i></div>
+              </a>
             </div>
           </div>
 
           <div id="m">
             <h4 id="foot-h">Why Us?</h4>
-            <p id="foot-p">Why Our Company</p>
+            <!-- <p id="foot-p">Why Our Company</p> -->
             <a href="obm.html">
               <p id="foot-p">Our Company vs <br />Online Business Manager</p>
             </a>
@@ -253,7 +353,7 @@
     </div>
 
     <div class="copyright">
-      <p>2024 © My Company. All Rights Reserved.</p>
+      <p>2024 © Nusanse. All Rights Reserved.</p>
     </div>
   </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -321,8 +421,6 @@
       });
     </script>
     <script>
-    
-
       document.querySelectorAll(".question").forEach((item) => {
         item.addEventListener("click", function () {
           // Toggle the 'active' class on the clicked question
@@ -337,6 +435,20 @@
           }
           answer.classList.toggle("show"); // Toggle 'show' class instead of directly changing 'display'
         });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var mixer = mixitup(".c-l", {
+          selectors: {
+            target: ".mixItem",
+          },
+
+          animation: {
+            duration: 300,
+          },
+        });
+        mixer.filter(".filter" , "all");
       });
     </script>
   </body>

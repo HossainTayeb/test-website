@@ -56,6 +56,9 @@ body {
   color: rgba(34, 34, 34, 1);
 }
 
+.about-nav, .services-nav{
+  margin-top: 4px;
+}
 /* ----hero ---- */
 
 .hero {
@@ -411,7 +414,8 @@ iframe {
 } */
 .answer {
   line-height: 1.5rem;
-  padding: 1.5rem 2rem;
+  padding: 0rem 2rem;
+  padding-bottom: 1.5rem;
   display: none;
   transition: opacity 0.3s ease;
 }
@@ -502,6 +506,9 @@ iframe {
   justify-content: center;
   transition: transform 0.3s ease;
 }
+.social a{
+  color: rgba(254, 254, 254, 1);
+}
 
 .copyright {
   text-align: center;
@@ -553,6 +560,9 @@ img {
     font-weight: 700;
     font-style: italic;
     color: rgba(255, 95, 0, 1);
+  }
+  p{
+    font-size: 1rem;
   }
 
   /* hero section  */
@@ -916,7 +926,9 @@ img {
     background-color: rgba(255, 95, 0, 1);
     border-radius: 10px;
   }
-
+  #new{
+    display: none;
+  }
   /* footer section  */
 
   /* #m {

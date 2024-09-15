@@ -532,10 +532,18 @@ span {
   .portfolio {
     padding: 20px 24px;
   }
-  .click {
+  /* .click {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+  } */
+  .click {
+    display: grid;
+    gap: .5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 60%;
+    overflow-x: scroll;
+    justify-content: start;
   }
   .click div {
     width: auto;
