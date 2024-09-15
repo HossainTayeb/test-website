@@ -166,6 +166,7 @@ body {
   color: rgba(255, 95, 0, 1);
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 .box div {
   width: 400px;
@@ -233,6 +234,29 @@ body {
   padding: 20px;
 }
 
+.review{
+  width: 251px;
+  height: 235px;
+  padding: 24px;
+  text-align: left;
+}
+.review h5{
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 1);
+  margin-bottom: 4px;
+}
+.review p{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(107, 107, 107, 1);
+}
+.review i{
+  margin: 1rem 0;
+  color: rgba(255, 196, 3, 1);
+}
+
+
 /* ----advertisement ---- */
 
 .advert {
@@ -263,6 +287,13 @@ body {
   -webkit-animation: scroll-left 30s linear infinite;
   animation: scroll-left 30s linear infinite;
 }
+.scroll-2 {
+  display: flex;
+  width: 400%;
+  gap: 32px;
+  -webkit-animation: scroll-right 30s linear infinite;
+  animation: scroll-right 30s linear infinite;
+}
 @-webkit-keyframes scroll-left {
   0% {
     transform: translateX(0);
@@ -277,6 +308,14 @@ body {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -302,33 +341,6 @@ body {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
-/* .head {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-} */
-/* .head > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.head > div > a > h4 {
-  font-weight: 500;
-} */
-/* .line {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 4rem;
-} */
-/* .head-1 {
-  color: rgba(255, 95, 0, 1);
-} */
-/* #hr-1 {
-  height: 4px;
-  border-radius: 4px;
-  background-color: rgba(255, 95, 0, 1);
-} */
 
 .question {
   font-size: 1.25rem;
@@ -352,7 +364,8 @@ body {
 } */
 .answer {
   line-height: 1.5rem;
-  padding: 1.5rem 2rem;
+  padding: 0rem 2rem;
+  padding-bottom: 1.5rem;
   display: none;
   transition: opacity 0.3s ease;
 }
@@ -712,6 +725,10 @@ img {
     font-size: 15px;
     text-align: center;
   }
+  .hero img{
+    max-width: 100%;
+  }
+
   .automation {
     padding: 20px 24px;
   }

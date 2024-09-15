@@ -124,11 +124,30 @@
   }
   
   /* ----you may like ----  */
-  .like {
+  .card {
     display: flex;
-    gap: 1.25rem;
-    margin-top: 4rem;
-    margin-bottom: 5.5rem;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .card .slideInner {
+    border-radius: 8px;
+  }
+  .card .slick-slide {
+    padding: 20px;
+  }
+  .testimonialSlider {
+    width: 100%;
+  }
+  
+  .slick-slide {
+    width: 100%;
+  }
+  
+  .slideInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
   }
   
   /* contact section starts */

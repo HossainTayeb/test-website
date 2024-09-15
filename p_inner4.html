@@ -27,6 +27,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <!-- stylesheet  -->
     <link rel="stylesheet" href="p_inner.css" />
     <link rel="stylesheet" href="navbar.css" />
@@ -37,12 +39,14 @@
       <div class="containerWrp">
         <div class="navbar">
           <div class="logo">
-            <img
-              src="images/logo - Nusanse.svg"
-              alt=""
-              height="32px"
-              width="155px"
-            />
+            <a href="index.html">
+              <img
+                src="images/logo - Nusanse.svg"
+                alt=""
+                height="32px"
+                width="155px"
+              />
+            </a>
           </div>
 
           <div class="hamburger-menu">
@@ -52,12 +56,6 @@
           <div class="nav">
             <a
               href="index.html"
-              style="
-                color: rgba(255, 95, 0, 1);
-                background-color: rgba(255, 239, 230, 1);
-                padding: 4px 8px;
-                border-radius: 8px;
-              "
               >Home
             </a>
             <div class="about-nav hasSubMenu">
@@ -104,6 +102,9 @@
                       <p class="small-p">Software Integration</p>
                       <br />
                       <p class="small-p">Sales Funnel and Pipelines</p>
+                      <br>
+                      <a href="services.html"><p>Web Development</p></a>
+
                     </li>
                   </ul>
                 </div>
@@ -234,12 +235,23 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
     <!-- you may like -->
     <div class="containerWrp">
       <h3 style="text-align: center; margin-top: 5.5rem">You may also like</h3>
-      <div class="like">
-        <div><img src="images/pi-c-l.png" alt="" /></div>
-        <div><img src="images/pi-c-mid.png" alt="" /></div>
-        <div><img src="images/pi-c-r.png" alt="" /></div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="card testimonialSlider">
+        <div class="slideInner">
+          <div><a href="p_inner2.html"><img src="images/port-2.png" alt=""></a></div>
+        </div>
+        <div class="slideInner">
+          <div><a href="p_inner5.html"><img src="images/port-5.png" alt=""></a></div>
+        </div>
+        <div class="slideInner">
+          <div><a href="p_inner6.html"><img src="images/port-6.png" alt=""></a></div>
+        </div>
+        <div class="slideInner">
+          <div><a href="p_inner.html"><img src="images/port-1.png" alt=""></a></div>
+        </div>
       </div>
     </div>
+
 
     <!-- contact section starts -->
 
@@ -280,15 +292,19 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
                 </div>
                 <p>From brand creation to revenue generation.</p>
                 <div class="social">
-                  <div><i class="fa-brands fa-instagram"></i></div>
+                  <a href="https://www.instagram.com/_nusanse?igsh=cms1a2xqODdiM2Zm">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                  </a>
                   <div><i class="fa-brands fa-twitter"></i></div>
-                  <div><i class="fa-brands fa-linkedin-in"></i></div>
+                  <a href="https://www.linkedin.com/company/nusanseio">
+                    <div><i class="fa-brands fa-linkedin-in"></i></div>
+                  </a>
                 </div>
               </div>
   
               <div id="m">
                 <h4 id="foot-h">Why Us?</h4>
-                <p id="foot-p">Why Our Company</p>
+                <!-- <p id="foot-p">Why Our Company</p> -->
                 <a href="obm.html">
                   <p id="foot-p">Our Company vs <br />Online Business Manager</p>
                 </a>
@@ -312,10 +328,12 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
         </div>
   
         <div class="copyright">
-          <p>2024 © My Company. All Rights Reserved.</p>
+          <p>2024 © Nusanse. All Rights Reserved.</p>
         </div>
       </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
       const hamburgerMenu = $(".hamburger-menu");
       const nav = $(".nav");
@@ -360,6 +378,35 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
           answer.classList.toggle("show"); // Toggle 'show' class instead of directly changing 'display'
         });
       });
+      $(document).ready(function(){
+      $(".testimonialSlider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+        ],
+      });
+    });
     </script>
   </body>
 </html>

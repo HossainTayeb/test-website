@@ -1,13 +1,13 @@
 /* ---------------------navbar-------------------------------------  */
 .nav  a.active{
-  color: rgba(255, 95, 0, 1);
-  background-color: rgba(255, 239, 230, 1);
+  /* color: rgba(255, 95, 0, 1);
+  background-color: rgba(255, 239, 230, 1); */
   padding: 4px 8px;
   border-radius: 8px;
 }
 .navbar {
   padding: 1rem 0;
-
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,6 +31,10 @@ a {
   border: 1px solid rgba(255, 95, 0, 1);
   border-radius: 10px;
 }
+.cta:hover{
+  background-color: rgba(255, 95, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
 .hasSubMenu {
   position: relative;
 }
@@ -44,13 +48,14 @@ a {
   color: rgba(255, 95, 0, 1);
 }
 li p {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 18px;
 }
 li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .small-p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: rgba(107, 107, 107, 1);
   margin-top: -8px;
@@ -60,9 +65,9 @@ li {
 /* --------------------------------------------------------- */
 .sub-menu {
   background-color: rgba(255, 255, 255, 1);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0;
-  padding: 1.5rem 2.5rem;
+  padding: 2rem 4rem 1.5rem 2rem;
   list-style-type: none;
   position: absolute;
   border: 1px solid rgba(153, 153, 153, 1);
@@ -70,6 +75,7 @@ li {
   top: -9999px;
   z-index: 999;
   left: 0;
+
 }
 .nav .hasSubMenu:hover .sub-menu {
   top: 15px;
@@ -83,17 +89,18 @@ li {
   gap: 3rem;
 
   background-color: rgba(255, 255, 255, 1);
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   /* margin-left: -6rem; */
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+
   position: absolute;
   border: 1px solid rgba(153, 153, 153, 1);
   border-radius: 8px;
   top: -999px;
   left: 0;
   z-index: 999;
-  width: 190%;
-  max-width: 250px;
+  width: 350%;
+  max-width: 300px;
 }
 .sub-menu-s {
   list-style-type: none;
@@ -233,6 +240,7 @@ li {
     border-radius: 32px;
   }
   .mobile-cta a{
+    text-align: center;
     color: rgba(255, 255, 255, 1);
   }
   .mobile-cta:hover{
@@ -299,4 +307,8 @@ li {
     border: 1px solid rgba(255, 95, 0, 1);
   }
 
+}
+
+.social a{
+  color: rgba(254, 254, 254,1);
 }
