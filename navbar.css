@@ -75,7 +75,6 @@ li {
   top: -9999px;
   z-index: 999;
   left: 0;
-
   box-shadow: 0px 4px 15px rgba(0,0,0,0.4);           
 }
 .nav .hasSubMenu:hover .sub-menu {
@@ -102,7 +101,6 @@ li {
   z-index: 999;
   width: 350%;
   max-width: 300px;
-
   box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
 }
 .sub-menu-s {
