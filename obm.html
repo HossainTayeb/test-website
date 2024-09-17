@@ -356,43 +356,8 @@
     <script>
       const hamburgerMenu = $(".hamburger-menu");
       const nav = $(".nav");
-
       const body = $("body");
-        // Function to close the menu
-        function closeMenu() {
-          nav.animate(
-            {
-              right: "-100%",
-              ease: "ease-out",
-            },
-            300,
-            function () {
-              nav.removeClass("show");
-            }
-          );
-        }
 
-        // Toggle menu on hamburger click
-        hamburgerMenu.click(function (event) {
-          event.stopPropagation(); // Prevent click from propagating to the document
-          if (!nav.hasClass("show")) {
-            openMenu();
-          } else {
-            closeMenu();
-          }
-        });
-
-        // Close menu if clicked outside of the nav
-        $(document).click(function (event) {
-          if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
-            closeMenu();
-          }
-        });
-
-        // Prevent click event from closing the menu when clicking inside the nav
-        nav.click(function (event) {
-          event.stopPropagation();
-        });
 
       document.querySelectorAll(".question").forEach((item) => {
         item.addEventListener("click", function () {
@@ -410,5 +375,58 @@
         });
       });
     </script>
+    <script> 
+      $(document).ready(function() {
+    
+      // Function to open the menu
+      function openMenu() {
+        if (!nav.hasClass("show")) {
+          nav.addClass("show");
+          nav.animate(
+            {
+              right: "0"
+            },
+            300
+          );
+        }
+      }
+    
+      // Function to close the menu
+      function closeMenu() {
+        nav.animate(
+          {
+            right: "-100%"
+          },
+          300,
+          function () {
+            nav.removeClass("show");
+          }
+        );
+      }
+    
+      // Toggle menu on hamburger click
+      hamburgerMenu.click(function (event) {
+        event.stopPropagation(); // Prevent click from propagating to the document
+        if (!nav.hasClass("show")) {
+          openMenu();
+        } else {
+          closeMenu();
+        }
+      });
+    
+      // Close menu if clicked outside of the nav
+      $(document).click(function (event) {
+        if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
+          closeMenu();
+        }
+      });
+    
+      // Prevent click event from closing the menu when clicking inside the nav
+      nav.click(function (event) {
+        event.stopPropagation();
+      });
+    });
+    
+  </script>
   </body>
 </html>

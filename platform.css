@@ -121,10 +121,14 @@ body {
 .testimonial {
   text-align: center;
   margin: 5.5rem 6.25rem;
+  padding: 0 24px;
 }
 .testimonial h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+.testimonial span{
+  font-size: 2rem;
 }
 .card {
   display: flex;

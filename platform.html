@@ -360,7 +360,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $(".testimonialSlider").slick({
           dots: true,
@@ -395,43 +395,62 @@
         const nav = $(".nav");
 
         const body = $("body");
-        // Function to close the menu
-        function closeMenu() {
-          nav.animate(
-            {
-              right: "-100%",
-              ease: "ease-out",
-            },
-            300,
-            function () {
-              nav.removeClass("show");
-            }
-          );
-        }
-
-        // Toggle menu on hamburger click
-        hamburgerMenu.click(function (event) {
-          event.stopPropagation(); // Prevent click from propagating to the document
-          if (!nav.hasClass("show")) {
-            openMenu();
-          } else {
-            closeMenu();
-          }
-        });
-
-        // Close menu if clicked outside of the nav
-        $(document).click(function (event) {
-          if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
-            closeMenu();
-          }
-        });
-
-        // Prevent click event from closing the menu when clicking inside the nav
-        nav.click(function (event) {
-          event.stopPropagation();
-        });
+        
       });
     </script>
+    <script> 
+    $(document).ready(function() {
+  
+    // Function to open the menu
+    function openMenu() {
+      if (!nav.hasClass("show")) {
+        nav.addClass("show");
+        nav.animate(
+          {
+            right: "0"
+          },
+          300
+        );
+      }
+    }
+  
+    // Function to close the menu
+    function closeMenu() {
+      nav.animate(
+        {
+          right: "-100%"
+        },
+        300,
+        function () {
+          nav.removeClass("show");
+        }
+      );
+    }
+  
+    // Toggle menu on hamburger click
+    hamburgerMenu.click(function (event) {
+      event.stopPropagation(); // Prevent click from propagating to the document
+      if (!nav.hasClass("show")) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
+    });
+  
+    // Close menu if clicked outside of the nav
+    $(document).click(function (event) {
+      if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
+        closeMenu();
+      }
+    });
+  
+    // Prevent click event from closing the menu when clicking inside the nav
+    nav.click(function (event) {
+      event.stopPropagation();
+    });
+  });
+  
+</script>
     <script>
       document.querySelectorAll(".question").forEach((item) => {
         item.addEventListener("click", function () {
@@ -462,6 +481,111 @@
         });
         mixer.filter(".filter" , "all");
       });
-    </script>
+    </script> -->
+  
+    <script>
+      $(document).ready(function () {
+        // Initialize Slick Slider
+        $(".testimonialSlider").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          adaptiveHeight: true,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              },
+            },
+          ],
+        });
+      
+        // Initialize MixItUp
+        var mixer = mixitup(".c-l", {
+          selectors: {
+            target: ".mixItem",
+          },
+          animation: {
+            duration: 300,
+          },
+        });
+        mixer.filter(".filter", "all");
+      
+        // Hamburger Menu Functionality
+        const hamburgerMenu = $(".hamburger-menu");
+        const nav = $(".nav");
+      
+        // Function to open the menu
+        function openMenu() {
+          if (!nav.hasClass("show")) {
+            nav.addClass("show");
+            nav.animate({
+              right: "0"
+            }, 300);
+          }
+        }
+      
+        // Function to close the menu
+        function closeMenu() {
+          nav.animate({
+            right: "-100%"
+          }, 300, function () {
+            nav.removeClass("show");
+          });
+        }
+      
+        // Toggle menu on hamburger click
+        hamburgerMenu.click(function (event) {
+          event.stopPropagation(); // Prevent click from propagating to the document
+          if (!nav.hasClass("show")) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
+        });
+      
+        // Close menu if clicked outside of the nav
+        $(document).click(function (event) {
+          if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
+            closeMenu();
+          }
+        });
+      
+        // Prevent click event from closing the menu when clicking inside the nav
+        nav.click(function (event) {
+          event.stopPropagation();
+        });
+      
+        // Handle click for question toggle
+        document.querySelectorAll(".question").forEach((item) => {
+          item.addEventListener("click", function () {
+            this.classList.toggle("active");
+            var answer = this.nextElementSibling;
+            if (answer.style.display === "block") {
+              answer.style.display = "none";
+            } else {
+              answer.style.display = "block";
+            }
+            answer.classList.toggle("show");
+          });
+        });
+      });
+      </script>
+      
+  
   </body>
 </html>
