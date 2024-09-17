@@ -322,3 +322,10 @@ li {
 .social a{
   color: rgba(254, 254, 254,1);
 }
+
+.social div{
+  padding: 18px;
+}
+.button{
+  flex-direction: column;
+}

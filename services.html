@@ -782,10 +782,11 @@
         });
         const hamburgerMenu = $(".hamburger-menu");
         const nav = $(".nav");
+        const body = $("body");
 
-        hamburgerMenu.click(function () {
+                     // Function to open the menu
+                     function openMenu() {
           if (!nav.hasClass("show")) {
-            //  slide from right animation with jquery
             nav.addClass("show");
             nav.animate(
               {
@@ -794,30 +795,56 @@
               },
               300
             );
+          }
+        }
+
+        // Function to close the menu
+        function closeMenu() {
+          nav.animate(
+            {
+              right: "-100%",
+              ease: "ease-out",
+            },
+            300,
+            function () {
+              nav.removeClass("show");
+            }
+          );
+        }
+
+        // Toggle menu on hamburger click
+        hamburgerMenu.click(function (event) {
+          event.stopPropagation(); // Prevent click from propagating to the document
+          if (!nav.hasClass("show")) {
+            openMenu();
           } else {
-            nav.animate(
-              {
-                right: "-100%",
-                ease: "ease-out",
-              },
-              300,
-              function () {
-                nav.removeClass("show");
-              }
-            );
+            closeMenu();
           }
         });
+
+        // Close menu if clicked outside of the nav
+        $(document).click(function (event) {
+          if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
+            closeMenu();
+          }
+        });
+
+        // Prevent click event from closing the menu when clicking inside the nav
+        nav.click(function (event) {
+          event.stopPropagation();
+        });
+
       });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburgerMenu = document.querySelector(".hamburger-menu");
-        const nav = document.querySelector(".nav");
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const hamburgerMenu = document.querySelector(".hamburger-menu");
+      //   const nav = document.querySelector(".nav");
 
-        hamburgerMenu.addEventListener("click", function () {
-          nav.classList.toggle("show"); // Toggle the 'show' class on the nav
-        });
-      });
+      //   hamburgerMenu.addEventListener("click", function () {
+      //     nav.classList.toggle("show"); // Toggle the 'show' class on the nav
+      //   });
+      // });
 
       document.querySelectorAll(".question").forEach((item) => {
         item.addEventListener("click", function () {

@@ -179,7 +179,7 @@
         <div>
           <h5>
             The project began with just one full-stack developer, a part-time UX/UI designer, and a project manager. We set out to design and develop a custom sales funnel landing page from the ground up, selecting a robust platform as the foundation. Within a few months, we established the core features and expanded the team to speed up the process. Currently, our team includes two full-stack developers, one part-time UX/UI designer, one QA specialist, and one project manager. This dedicated team has achieved remarkable progress, with the new landing page live and driving conversions within six months.
-We transformed and enhanced the coffee shop's digital marketing strategy by creating an engaging and intuitive landing page tailored to attract and retain customers. We utilized cutting-edge technologies, including modern web development frameworks, secure APIs for seamless integration with existing systems, and data analytics tools to optimize the sales funnel and improve customer engagement.
+            We transformed and enhanced the coffee shop's digital marketing strategy by creating an engaging and intuitive landing page tailored to attract and retain customers. We utilized cutting-edge technologies, including modern web development frameworks, secure APIs for seamless integration with existing systems, and data analytics tools to optimize the sales funnel and improve customer engagement.
           </h5>
         </div>
       </div>
@@ -234,20 +234,21 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
 
     <!-- you may like -->
     <div class="containerWrp">
-      <h3 style="text-align: center; margin-top: 5.5rem">You may also like</h3>
-
-      <div data-aos="fade-up" data-aos-delay="200" class="card testimonialSlider">
-        <div class="slideInner">
-          <div><a href="p_inner2.html"><img src="images/port-2.png" alt=""></a></div>
-        </div>
-        <div class="slideInner">
-          <div><a href="p_inner5.html"><img src="images/port-5.png" alt=""></a></div>
-        </div>
-        <div class="slideInner">
-          <div><a href="p_inner6.html"><img src="images/port-6.png" alt=""></a></div>
-        </div>
-        <div class="slideInner">
-          <div><a href="p_inner.html"><img src="images/port-1.png" alt=""></a></div>
+      <div class="like">
+        <h3 style="text-align: center; margin-top: 5.5rem">You may also like</h3>
+        <div data-aos="fade-up" data-aos-delay="200" class="card testimonialSlider">
+          <div class="slideInner">
+            <div><a href="p_inner2.html"><img src="images/port-2.png" alt=""></a></div>
+          </div>
+          <div class="slideInner">
+            <div><a href="p_inner5.html"><img src="images/port-5.png" alt=""></a></div>
+          </div>
+          <div class="slideInner">
+            <div><a href="p_inner6.html"><img src="images/port-6.png" alt=""></a></div>
+          </div>
+          <div class="slideInner">
+            <div><a href="p_inner.html"><img src="images/port-1.png" alt=""></a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -338,18 +339,9 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
       const hamburgerMenu = $(".hamburger-menu");
       const nav = $(".nav");
 
-      hamburgerMenu.click(function () {
-        if (!nav.hasClass("show")) {
-          //  slide from right animation with jquery
-          nav.addClass("show");
-          nav.animate(
-            {
-              right: "0",
-              ease: "ease-in",
-            },
-            300
-          );
-        } else {
+      const body = $("body");
+        // Function to close the menu
+        function closeMenu() {
           nav.animate(
             {
               right: "-100%",
@@ -361,7 +353,28 @@ We transformed and enhanced the coffee shop's digital marketing strategy by crea
             }
           );
         }
-      });
+
+        // Toggle menu on hamburger click
+        hamburgerMenu.click(function (event) {
+          event.stopPropagation(); // Prevent click from propagating to the document
+          if (!nav.hasClass("show")) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
+        });
+
+        // Close menu if clicked outside of the nav
+        $(document).click(function (event) {
+          if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
+            closeMenu();
+          }
+        });
+
+        // Prevent click event from closing the menu when clicking inside the nav
+        nav.click(function (event) {
+          event.stopPropagation();
+        });
 
       document.querySelectorAll(".question").forEach((item) => {
         item.addEventListener("click", function () {

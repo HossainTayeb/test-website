@@ -538,6 +538,8 @@
     }
     .like{
       margin-top: 24px;
+      width: 100%;
+      overflow: hidden;
     }
   }
   

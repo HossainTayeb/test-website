@@ -284,7 +284,8 @@ img {
   vertical-align: middle;
 }
 @media only screen and (max-width: 576px) {
-  
+
+
   .about {
     margin: 0 24px;
     flex-direction: column;
@@ -539,5 +540,7 @@ img {
   }
   .like{
     margin-top: 24px;
+    width: 100%;
+    overflow: hidden;
   }
 }
