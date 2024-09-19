@@ -65,6 +65,7 @@
           </div>
 
           <div class="nav">
+            <div class="cross"><i class="fa-solid fa-x"></i></div>
             <a href="index.html" class="active">Home</a>
             <div class="about-nav hasSubMenu">
               <a href="#">About us &nbsp;<i class="fa-solid fa-chevron-down"></i></a>
@@ -317,7 +318,7 @@
           data-aos="fade-up"
           data-aos-offset="500"
           data-aos-delay="100"
-          src="images/solution.png"
+          src="images/solution-n.png"
           alt=""
         />
       </div>
@@ -811,7 +812,7 @@
                 <a href="https://www.instagram.com/_nusanse?igsh=cms1a2xqODdiM2Zm">
                   <div><i class="fa-brands fa-instagram"></i></div>
                 </a>
-                <div><i class="fa-brands fa-twitter"></i></div>
+                <!-- <div><i class="fa-brands fa-twitter"></i></div> -->
                 <a href="https://www.linkedin.com/company/nusanseio">
                   <div><i class="fa-brands fa-linkedin-in"></i></div>
                 </a>
@@ -892,7 +893,6 @@
         const hamburgerMenu = $(".hamburger-menu");
         const nav = $(".nav");
         const body = $("body");
-
 
         // hamburgerMenu.click(function () {
         //   if (!nav.hasClass("show")) {
@@ -990,6 +990,29 @@
         });
       });
     </script>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.querySelector('.nav');
+    const cross = document.querySelector('.cross');
+
+    // Function to close the menu
+    function closeMenu() {
+      nav.style.right = '-100%';
+      nav.classList.remove('show');
+    }
+
+    // Add click event listener to the cross button
+    cross.addEventListener('click', function (event) {
+      event.stopPropagation(); // Prevent click from propagating to the document
+      closeMenu();
+    });
+  });
+</script>
+
     
   </body>
 </html>

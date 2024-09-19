@@ -120,7 +120,27 @@ li {
 .mobile-cta{
   display: none;
 }
+.cross{
+  display: none;
+}
 @media only screen and (max-width: 576px) {
+  
+  .cross{
+    display:block;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 2%;
+    left: 5%;
+  }
+  .cross:hover{
+    cursor: pointer;
+    color: rgba(255, 95, 0, 1);
+    /* border: 1px solid rgba(255, 95, 0, 0.6); */
+  }
+  
+  
   .navbar {
     width: 100%;
     padding: 12px 24px;
@@ -142,6 +162,7 @@ li {
 
     /* top: 100%; */
     top: 48px;
+    /* top: 0; */
 
     width: 80%;
 
@@ -319,6 +340,9 @@ li {
     color: rgba(255, 95, 0, 1);
     border: 1px solid rgba(255, 95, 0, 1);
   }
+  .button{
+    flex-direction: column;
+  }
 
 }
 
@@ -328,7 +352,4 @@ li {
 
 .social div{
   padding: 18px;
-}
-.button{
-  flex-direction: column;
 }
