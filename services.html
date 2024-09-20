@@ -61,6 +61,7 @@
           </div>
 
           <div class="nav">
+            <div class="cross"><i class="fa-solid fa-x"></i></div>
             <a href="index.html">Home</a>
             <div class="about-nav hasSubMenu">
               <a href="#"
@@ -748,119 +749,128 @@
         <p>2024 © Nusanse. All Rights Reserved.</p>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".testimonialSlider").slick({
-          dots: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 4,
-          adaptiveHeight: true,
-          autoplay: true,
-          autoplaySpeed: 1000,
-          //   responsive
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              },
-            },
-          ],
-        });
-        const hamburgerMenu = $(".hamburger-menu");
-        const nav = $(".nav");
-        const body = $("body");
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
-                     // Function to open the menu
-                     function openMenu() {
-          if (!nav.hasClass("show")) {
-            nav.addClass("show");
-            nav.animate(
-              {
-                right: "0",
-                ease: "ease-in",
-              },
-              300
-            );
+<script>
+  $(document).ready(function () {
+    $(".testimonialSlider").slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      adaptiveHeight: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+      ],
+    });
+
+    const hamburgerMenu = $(".hamburger-menu");
+    const nav = $(".nav");
+
+    // Function to open the menu
+    function openMenu() {
+      if (!nav.hasClass("show")) {
+        nav.addClass("show");
+        nav.animate(
+          {
+            right: "0",
+          },
+          {
+            duration: 300,
+            easing: "swing", // Adjust as needed
           }
+        );
+      }
+    }
+
+    // Function to close the menu
+    function closeMenu() {
+      nav.animate(
+        {
+          right: "-100%",
+        },
+        {
+          duration: 300,
+          easing: "swing", // Adjust as needed
+          complete: function () {
+            nav.removeClass("show");
+          },
         }
+      );
+    }
 
-        // Function to close the menu
-        function closeMenu() {
-          nav.animate(
-            {
-              right: "-100%",
-              ease: "ease-out",
-            },
-            300,
-            function () {
-              nav.removeClass("show");
-            }
-          );
-        }
+    // Toggle menu on hamburger click
+    hamburgerMenu.click(function (event) {
+      event.stopPropagation(); // Prevent click from propagating to the document
+      if (!nav.hasClass("show")) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
+    });
 
-        // Toggle menu on hamburger click
-        hamburgerMenu.click(function (event) {
-          event.stopPropagation(); // Prevent click from propagating to the document
-          if (!nav.hasClass("show")) {
-            openMenu();
-          } else {
-            closeMenu();
-          }
-        });
+    // Close menu if clicked outside of the nav
+    $(document).click(function (event) {
+      if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
+        closeMenu();
+      }
+    });
 
-        // Close menu if clicked outside of the nav
-        $(document).click(function (event) {
-          if (nav.hasClass("show") && !nav.is(event.target) && !nav.has(event.target).length) {
-            closeMenu();
-          }
-        });
+    // Prevent click event from closing the menu when clicking inside the nav
+    nav.click(function (event) {
+      event.stopPropagation();
+    });
+  });
+</script>
 
-        // Prevent click event from closing the menu when clicking inside the nav
-        nav.click(function (event) {
-          event.stopPropagation();
-        });
+<script>
+  document.querySelectorAll(".question").forEach((item) => {
+    item.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const answer = this.nextElementSibling;
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+      answer.classList.toggle("show");
+    });
+  });
+</script>
 
-      });
-    </script>
-    <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   const hamburgerMenu = document.querySelector(".hamburger-menu");
-      //   const nav = document.querySelector(".nav");
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.querySelector('.nav');
+    const cross = document.querySelector('.cross');
 
-      //   hamburgerMenu.addEventListener("click", function () {
-      //     nav.classList.toggle("show"); // Toggle the 'show' class on the nav
-      //   });
-      // });
+    // Function to close the menu
+    function closeMenu() {
+      nav.style.right = '-100%';
+      nav.classList.remove('show');
+    }
 
-      document.querySelectorAll(".question").forEach((item) => {
-        item.addEventListener("click", function () {
-          // Toggle the 'active' class on the clicked question
-          this.classList.toggle("active");
-
-          // Toggle the visibility of the answer associated with the clicked question
-          var answer = this.nextElementSibling;
-          if (answer.style.display === "block") {
-            answer.style.display = "none";
-          } else {
-            answer.style.display = "block";
-          }
-          answer.classList.toggle("show"); // Toggle 'show' class instead of directly changing 'display'
-        });
-      });
-    </script>
+    // Add click event listener to the cross button
+    cross.addEventListener('click', function (event) {
+      event.stopPropagation(); // Prevent click from propagating to the document
+      closeMenu();
+    });
+  });
+</script>
+    
+    
   </body>
 </html>

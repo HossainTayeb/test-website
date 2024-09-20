@@ -61,6 +61,7 @@
           </div>
 
           <div class="nav">
+            <div class="cross"><i class="fa-solid fa-x"></i></div>
             <a
               href="index.html"
             
@@ -272,19 +273,13 @@
         <div class="apart">
           <h3>Values That</h3>
           <span>Sets Us Apart</span>
-          <button class="active tabBtn" data-target="#tab1">
-            Transparent Communication
-          </button>
+          <button class="active tabBtn" data-target="#tab1">Transparent Communication</button>
           <div class="hr"></div>
-          <button class="tabBtn" data-target="#tab2">
-            Precision Management
-          </button>
+          <button class="tabBtn" data-target="#tab2">Precision Management</button>
           <div class="hr"></div>
           <button class="tabBtn" data-target="#tab3">Meticulous Detail</button>
           <div class="hr"></div>
-          <button class="tabBtn" data-target="#tab4">
-            Innovative Excellence
-          </button>
+          <button class="tabBtn" data-target="#tab4">Innovative Excellence</button>
           <div class="hr"></div>
         </div>
         <div class="tp">
@@ -497,6 +492,7 @@
 
         const hamburgerMenu = $(".hamburger-menu");
         const nav = $(".nav");
+        const body = $("body");
 
         // Function to open the menu
         function openMenu() {
@@ -511,7 +507,6 @@
             );
           }
         }
-        const body = $("body");
         // Function to close the menu
         function closeMenu() {
           nav.animate(
@@ -566,5 +561,34 @@
         });
       });
     </script>
+    <script>
+      document.querySelectorAll('.tabBtn').forEach(button => {
+          button.addEventListener('click', () => {
+              // Remove 'active' class from all buttons
+              document.querySelectorAll('.tabBtn').forEach(btn => btn.classList.remove('active'));
+              
+              // Add 'active' class to the clicked button
+              button.classList.add('active');
+          });
+      });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const nav = document.querySelector('.nav');
+      const cross = document.querySelector('.cross');
+  
+      // Function to close the menu
+      function closeMenu() {
+        nav.style.right = '-100%';
+        nav.classList.remove('show');
+      }
+  
+      // Add click event listener to the cross button
+      cross.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent click from propagating to the document
+        closeMenu();
+      });
+    });
+  </script>
   </body>
 </html>

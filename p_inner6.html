@@ -54,6 +54,7 @@
           </div>
 
           <div class="nav">
+            <div class="cross"><i class="fa-solid fa-x"></i></div>
             <a
               href="index.html"
               >Home
@@ -333,7 +334,6 @@
         </div>
       </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
       const hamburgerMenu = $(".hamburger-menu");
@@ -438,5 +438,24 @@
     });
     
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const nav = document.querySelector('.nav');
+      const cross = document.querySelector('.cross');
+  
+      // Function to close the menu
+      function closeMenu() {
+        nav.style.right = '-100%';
+        nav.classList.remove('show');
+      }
+  
+      // Add click event listener to the cross button
+      cross.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent click from propagating to the document
+        closeMenu();
+      });
+    });
+  </script>
+  
   </body>
 </html>
