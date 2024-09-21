@@ -367,6 +367,7 @@ span {
 .footer {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+  
   background-color: rgba(255, 205, 176, 1);
   padding: 4rem 6.25rem 3rem 6.25rem;
 }
