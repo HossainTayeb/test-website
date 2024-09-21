@@ -469,7 +469,7 @@ iframe {
   background-color: rgba(255, 95, 0, 1);
 }
 .contact .button .cta-s {
-  width: 14rem;
+  width: 11rem;
   height: 3.5rem;
 }
 
@@ -927,6 +927,9 @@ img {
     padding: 1rem 4.5rem;
     background-color: rgba(255, 95, 0, 1);
     border-radius: 10px;
+  }
+  .contact .button .cta-s{
+    width: 14rem;
   }
   #new{
     display: none;

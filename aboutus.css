@@ -370,9 +370,7 @@ span {
 .footer h4 {
   font-weight: 700;
 }
-.brand {
-  margin-right: 30rem;
-}
+
 .brand .logo {
   margin-bottom: 1rem;
 }
@@ -398,6 +396,7 @@ span {
 .social a{
   color: rgba(254, 254, 254, 1);
 }
+
 .copyright {
   text-align: center;
   background-color: rgba(255, 181, 138, 1);
@@ -416,6 +415,7 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
 @media only screen and (max-width: 576px) {
   
   .about {

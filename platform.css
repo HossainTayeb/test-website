@@ -236,9 +236,7 @@ span {
 .footer h4 {
   font-weight: 700;
 }
-.brand {
-  margin-right: 30rem;
-}
+
 .brand .logo {
   margin-bottom: 1rem;
 }
@@ -261,6 +259,10 @@ span {
   justify-content: center;
   transition: transform 0.3s ease;
 }
+.social a{
+  color: rgba(254, 254, 254, 1);
+}
+
 .copyright {
   text-align: center;
   background-color: rgba(255, 181, 138, 1);
@@ -275,30 +277,11 @@ span {
   color: rgba(107, 107, 107, 1);
   margin-bottom: 1rem;
 }
-.contact {
-  position: relative;
-}
-
-.bg {
-  position: absolute;
-}
-.contact > .bg {
-  margin-top: 80px;
-  position: absolute;
-  /* z-index: 1; */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-.contact > .bg img {
-  max-height: 200px;
-  width: 100%;
-}
-
 img {
   max-width: 100%;
   vertical-align: middle;
 }
+
 @media only screen and (max-width: 576px) {
   .about {
     margin: 0 24px;
