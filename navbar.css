@@ -354,3 +354,6 @@ li {
 .social div{
   padding: 18px;
 }
+.footer{
+  grid-template-columns: 2fr 1fr 1fr;
+}
