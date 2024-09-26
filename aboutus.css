@@ -241,6 +241,8 @@ span {
 .tp img {
   z-index: 1;
   position: relative;
+  width: 525px;
+  height: 294px;
 }
 .orange-1 {
   position: absolute;
@@ -253,6 +255,18 @@ span {
   margin-left: 250px;
   z-index: -9;
   color: rgba(255, 95, 0, 1);
+}
+#one{
+  margin-left: 165px;
+}
+#two{
+  margin-left: 255px;
+}
+#three{
+  margin-left: 365px;
+}
+#four{
+  margin-left: 300px;
 }
 .tp h5 {
   margin-top: 3rem;
